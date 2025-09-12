@@ -58,7 +58,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 Elite Interior Design
               </h3>
-              <p className="text-accent font-medium">Transform Your Space</p>
+              <p className="text-white font-medium">Transform Your Space</p>
             </div>
           </div>
           
@@ -66,31 +66,31 @@ const Footer = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <Users className="w-6 h-6 text-accent mr-2" />
+                <Users className="w-6 h-6 text-white mr-2" />
                 <span className="text-2xl font-bold">500+</span>
               </div>
-              <p className="text-sm text-gray-400">Happy Clients</p>
+              <p className="text-sm text-gray-200">Happy Clients</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <Award className="w-6 h-6 text-accent mr-2" />
+                <Award className="w-6 h-6 text-white mr-2" />
                 <span className="text-2xl font-bold">50+</span>
               </div>
-              <p className="text-sm text-gray-400">Awards Won</p>
+              <p className="text-sm text-gray-200">Awards Won</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <Star className="w-6 h-6 text-accent mr-2" />
+                <Star className="w-6 h-6 text-white mr-2" />
                 <span className="text-2xl font-bold">4.9</span>
               </div>
-              <p className="text-sm text-gray-400">Rating</p>
+              <p className="text-sm text-gray-200">Rating</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <Heart className="w-6 h-6 text-accent mr-2" />
+                <Heart className="w-6 h-6 text-white mr-2" />
                 <span className="text-2xl font-bold">10+</span>
               </div>
-              <p className="text-sm text-gray-400">Years Exp</p>
+              <p className="text-sm text-gray-200">Years Exp</p>
             </div>
           </div>
         </div>
@@ -99,13 +99,13 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Main Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-accent">Explore</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Explore</h4>
             <ul className="space-y-2">
               {mainLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-accent transition-colors duration-200 flex items-center group"
+                    className="text-gray-100 hover:text-accent transition-colors duration-200 flex items-center group"
                   >
                     <ArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                     {link.name}
@@ -117,13 +117,13 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-accent">Services</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Services</h4>
             <ul className="space-y-2">
               {serviceLinks.map((service) => (
                 <li key={service.name}>
                   <Link
                     href={service.href}
-                    className="text-gray-300 hover:text-accent transition-colors duration-200 flex items-center group"
+                    className="text-gray-100 hover:text-accent transition-colors duration-200 flex items-center group"
                   >
                     <ArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                     {service.name}
@@ -135,29 +135,29 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-accent">Contact</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-accent flex-shrink-0" />
+                <Phone className="w-4 h-4 text-white flex-shrink-0" />
                 <a
                   href="tel:+15551234567"
-                  className="text-gray-300 hover:text-accent transition-colors duration-200 text-sm"
+                  className="text-gray-100 hover:text-accent transition-colors duration-200 text-sm"
                 >
                   +1 (555) 123-4567
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-accent flex-shrink-0" />
+                <Mail className="w-4 h-4 text-white flex-shrink-0" />
                 <a
                   href="mailto:info@eliteinteriordesign.com"
-                  className="text-gray-300 hover:text-accent transition-colors duration-200 text-sm"
+                  className="text-gray-100 hover:text-accent transition-colors duration-200 text-sm"
                 >
                   info@eliteinteriordesign.com
                 </a>
               </div>
               <div className="flex items-start space-x-2">
-                <MapPin className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">
+                <MapPin className="w-4 h-4 text-white mt-1 flex-shrink-0" />
+                <p className="text-gray-100 text-sm">
                   123 Design Street<br />
                   New York, NY 10001
                 </p>
@@ -167,7 +167,7 @@ const Footer = () => {
 
           {/* Social & Legal */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-accent">Connect</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Connect</h4>
             <div className="space-y-4">
               {/* Social Links */}
               <div className="flex space-x-3">
@@ -194,7 +194,7 @@ const Footer = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-gray-400 hover:text-accent text-sm transition-colors duration-200 block"
+                    className="text-gray-200 hover:text-accent text-sm transition-colors duration-200 block"
                   >
                     {item.name}
                   </Link>
@@ -208,7 +208,7 @@ const Footer = () => {
         <div className="bg-gradient-to-r from-accent/10 to-brown-600/10 rounded-2xl p-6 mb-8">
           <div className="text-center">
             <h4 className="text-xl font-semibold mb-2">Stay Updated with Design Trends</h4>
-            <p className="text-gray-300 mb-4">Get exclusive design tips and project inspiration delivered to your inbox.</p>
+            <p className="text-gray-100 mb-4">Get exclusive design tips and project inspiration delivered to your inbox.</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
@@ -227,7 +227,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-200 text-sm">
                 © {currentYear} Elite Interior Design. All rights reserved.
               </p>
             </div>

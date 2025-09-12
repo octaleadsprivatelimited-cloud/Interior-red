@@ -94,7 +94,6 @@ const Header = () => {
                       href={item.href}
                       className="flex items-center space-x-1 px-4 py-2 text-gray-700 hover:text-accent font-medium transition-all duration-200 rounded-lg hover:bg-gray-50"
                     >
-                      <Icon className="w-4 h-4" />
                       <span>{item.name}</span>
                       {item.hasDropdown && <ChevronDown className="w-3 h-3" />}
                     </Link>
