@@ -106,8 +106,7 @@ const Portfolio = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Our
-            <span className="block text-accent">Portfolio</span>
+            Our <span className="text-accent">Portfolio</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Explore our carefully curated collection of successful interior design projects.

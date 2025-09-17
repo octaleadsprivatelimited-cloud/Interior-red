@@ -72,8 +72,7 @@ const FurnitureSelection = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Furniture
-            <span className="block text-accent">Selection</span>
+            Furniture <span className="text-accent">Selection</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Curate the perfect furniture pieces that combine style, comfort, and durability.
@@ -89,8 +88,7 @@ const FurnitureSelection = () => {
               Our Services
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Expert
-              <span className="block text-accent">Furniture Solutions</span>
+              Expert <span className="text-accent">Furniture Solutions</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From residential homes to commercial spaces, we help you select furniture 
@@ -143,8 +141,7 @@ const FurnitureSelection = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Why Professional
-              <span className="block text-accent">Furniture Selection</span>
+              Why Professional <span className="text-accent">Furniture Selection</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Choosing the right furniture is crucial for creating a cohesive, functional, 
@@ -178,8 +175,7 @@ const FurnitureSelection = () => {
                 Our Process
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                How We Select
-                <span className="block text-accent">Your Furniture</span>
+                How We Select <span className="text-accent">Your Furniture</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our systematic approach ensures every piece of furniture is perfectly 

@@ -72,8 +72,7 @@ const ColorConsultation = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Color
-            <span className="block text-accent">Consultation</span>
+            Color <span className="text-accent">Consultation</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Expert color guidance to create the perfect mood and atmosphere for your space.
@@ -89,8 +88,7 @@ const ColorConsultation = () => {
               Our Services
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Professional
-              <span className="block text-accent">Color Solutions</span>
+              Professional <span className="text-accent">Color Solutions</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From residential homes to commercial spaces, we help you choose colors 
@@ -143,8 +141,7 @@ const ColorConsultation = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Why Color
-              <span className="block text-accent">Consultation Matters</span>
+              Why Color <span className="text-accent">Consultation Matters</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Color is one of the most powerful design elements. The right color choices 
@@ -178,8 +175,7 @@ const ColorConsultation = () => {
                 Our Process
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                How We Choose
-                <span className="block text-accent">Your Colors</span>
+                How We Choose <span className="text-accent">Your Colors</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our systematic approach ensures you get the perfect color palette 

@@ -72,8 +72,7 @@ const CommercialDesign = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Commercial
-            <span className="block text-accent">Interior Design</span>
+            Commercial <span className="text-accent">Interior Design</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Create professional, inspiring work environments that boost productivity and impress clients.
@@ -89,8 +88,7 @@ const CommercialDesign = () => {
               Our Services
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Professional
-              <span className="block text-accent">Commercial Solutions</span>
+              Professional <span className="text-accent">Commercial Solutions</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From corporate offices to retail spaces, we design commercial environments 
@@ -143,8 +141,7 @@ const CommercialDesign = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Why Commercial Design
-              <span className="block text-accent">Matters</span>
+              Why Commercial Design <span className="text-accent">Matters</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Professional commercial design goes beyond aesthetics - it's an investment 
@@ -178,8 +175,7 @@ const CommercialDesign = () => {
                 Our Process
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Streamlined
-                <span className="block text-accent">Project Management</span>
+                Streamlined <span className="text-accent">Project Management</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 We understand that commercial projects require minimal disruption to your 

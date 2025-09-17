@@ -72,8 +72,7 @@ const SpacePlanning = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Space
-            <span className="block text-accent">Planning</span>
+            Space <span className="text-accent">Planning</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Optimize your space layout for maximum functionality and visual appeal.
@@ -89,8 +88,7 @@ const SpacePlanning = () => {
               Our Services
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Professional
-              <span className="block text-accent">Space Solutions</span>
+              Professional <span className="text-accent">Space Solutions</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From residential homes to commercial offices, we create layouts that work 
@@ -143,8 +141,7 @@ const SpacePlanning = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Why Space Planning
-              <span className="block text-accent">Matters</span>
+              Why Space Planning <span className="text-accent">Matters</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Good space planning is the foundation of great interior design. 
@@ -178,8 +175,7 @@ const SpacePlanning = () => {
                 Our Process
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                How We Plan
-                <span className="block text-accent">Your Space</span>
+                How We Plan <span className="text-accent">Your Space</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our systematic approach ensures every space is planned to perfection, 

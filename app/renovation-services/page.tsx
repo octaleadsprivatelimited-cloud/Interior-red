@@ -72,8 +72,7 @@ const RenovationServices = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Renovation
-            <span className="block text-accent">Services</span>
+            Renovation <span className="text-accent">Services</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Complete renovation solutions from concept to completion with minimal disruption.
@@ -89,8 +88,7 @@ const RenovationServices = () => {
               Our Services
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Complete
-              <span className="block text-accent">Renovation Solutions</span>
+              Complete <span className="text-accent">Renovation Solutions</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From single rooms to entire homes, we provide comprehensive renovation 
@@ -143,8 +141,7 @@ const RenovationServices = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Why Choose Our
-              <span className="block text-accent">Renovation Services</span>
+              Why Choose Our <span className="text-accent">Renovation Services</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Professional renovation services that deliver exceptional results 
@@ -178,8 +175,7 @@ const RenovationServices = () => {
                 Our Process
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                How We Manage
-                <span className="block text-accent">Your Renovation</span>
+                How We Manage <span className="text-accent">Your Renovation</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our systematic approach ensures your renovation project is completed 

@@ -77,8 +77,7 @@ const ResidentialDesign = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Residential
-            <span className="block text-accent">Interior Design</span>
+            Residential <span className="text-accent">Interior Design</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Transform your home into a beautiful, functional space that reflects your personal style.
@@ -94,8 +93,7 @@ const ResidentialDesign = () => {
               Our Services
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Complete Home
-              <span className="block text-accent">Design Solutions</span>
+              Complete Home <span className="text-accent">Design Solutions</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From single rooms to entire home makeovers, we create spaces that are both 
@@ -148,8 +146,7 @@ const ResidentialDesign = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Our Design
-              <span className="block text-accent">Process</span>
+              Our Design <span className="text-accent">Process</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We follow a proven process to ensure your project is completed on time, 
@@ -182,8 +179,7 @@ const ResidentialDesign = () => {
                 Why Choose Us
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Experience the
-                <span className="block text-accent">Elite Difference</span>
+                Experience the <span className="text-accent">Elite Difference</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 With over 10 years of experience in residential design, we understand 

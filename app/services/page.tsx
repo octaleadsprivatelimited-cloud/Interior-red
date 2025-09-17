@@ -152,8 +152,7 @@ const Services = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Our
-            <span className="block text-accent">Services</span>
+            Our <span className="text-accent">Services</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Comprehensive interior design solutions tailored to your unique needs and vision.
@@ -169,8 +168,7 @@ const Services = () => {
               What We Offer
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Complete Design
-              <span className="block text-accent">Solutions</span>
+              Complete Design <span className="text-accent">Solutions</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From concept to completion, we offer a full range of interior design services 
@@ -259,8 +257,7 @@ const Services = () => {
               Our Process
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              How We Work
-              <span className="block text-accent">Step by Step</span>
+              How We Work <span className="text-accent">Step by Step</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Our proven process ensures your project is completed on time, 
@@ -294,8 +291,7 @@ const Services = () => {
                 Why Choose Us
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Experience the
-                <span className="block text-accent">Elite Difference</span>
+                Experience the <span className="text-accent">Elite Difference</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 With over 10 years of experience and 500+ successful projects, 

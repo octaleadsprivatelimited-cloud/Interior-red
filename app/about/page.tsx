@@ -58,8 +58,7 @@ const About = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-            About
-            <span className="block text-accent">Dream Space Interiors</span>
+            About <span className="text-accent">Dream Space Interiors</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             We are passionate designers dedicated to creating beautiful, 
@@ -84,8 +83,7 @@ const About = () => {
                 Our Story
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Founded on a Vision
-                <span className="block text-accent">of Excellence</span>
+                Founded on a Vision <span className="text-accent">of Excellence</span>
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Dream Space Interiors was founded in 2013 with a simple yet powerful vision: 
@@ -133,8 +131,7 @@ const About = () => {
               Our Values
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              What Drives Us
-              <span className="block text-accent">Every Day</span>
+              What Drives Us <span className="text-accent">Every Day</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Our core values guide everything we do, from initial consultation 

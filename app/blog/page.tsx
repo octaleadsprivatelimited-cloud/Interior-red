@@ -119,8 +119,7 @@ const Blog = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Design
-            <span className="block text-accent">Blog</span>
+            Design <span className="text-accent">Blog</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Stay updated with the latest design trends, tips, and inspiration.
@@ -133,8 +132,7 @@ const Blog = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Featured
-              <span className="block text-accent">Articles</span>
+              Featured <span className="text-accent">Articles</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Our most popular and trending articles on interior design.

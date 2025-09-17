@@ -113,8 +113,7 @@ const Contact = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Get In
-            <span className="block text-accent">Touch</span>
+            Get In <span className="text-accent">Touch</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Ready to transform your space? Let's discuss your project and 
