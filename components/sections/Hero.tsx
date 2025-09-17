@@ -77,7 +77,7 @@ const Hero = () => {
   const currentSlideData = heroSlides[currentSlide];
 
   return (
-    <section className="relative min-h-[calc(100vh-56px)] lg:min-h-[calc(100vh-72px)] overflow-hidden">
+            <section className="relative min-h-[calc(100vh-48px)] lg:min-h-[calc(100vh-56px)] overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0">
         {heroSlides.map((slide, index) => (
@@ -100,15 +100,15 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-start pt-0 lg:pt-0">
-        <div className="container-custom px-4 w-full">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 w-full">
+      <div className="relative z-10 h-full flex items-center pt-0 lg:pt-0 py-16 lg:py-24">
+        <div className="container-custom px-4 w-full h-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 w-full h-full items-end">
             {/* Left Column - Hero Content */}
-            <div className="max-w-2xl">
+            <div className="max-w-2xl mx-auto lg:justify-self-center self-end mb-6">
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 lg:mb-6 leading-tight">
-                <span className="inline">{currentSlideData.title}</span>
-                <span className="inline text-accent-400 ml-2">{currentSlideData.subtitle}</span>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 lg:mb-4 leading-tight">
+                <span className="block">{currentSlideData.title}</span>
+                <span className="block text-accent-400">{currentSlideData.subtitle}</span>
               </h1>
               
               <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 lg:mb-8 max-w-2xl leading-relaxed">
@@ -163,9 +163,9 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right Column - Cute Contact Form */}
-            <div className="max-w-md mx-auto lg:mx-0 lg:justify-self-end">
-              <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-2xl border border-white/20 relative overflow-hidden">
+            {/* Right Column - Contact Form */}
+            <div className="max-w-md mx-auto lg:mx-0 lg:justify-self-end self-center">
+              <div className="bg-white/95 backdrop-blur-sm rounded-none p-6 shadow-2xl border border-white/20 relative overflow-hidden">
                 {/* Cute decorative elements */}
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent-400 rounded-full opacity-20"></div>
                 <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-primary-400 rounded-full opacity-20"></div>
@@ -185,7 +185,7 @@ const Hero = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-10 pr-4 py-3 text-sm border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all duration-200 bg-white/80 placeholder-gray-400"
+                        className="w-full pl-10 pr-4 py-3 text-sm border border-gray-200 rounded-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all duration-200 bg-white/80 placeholder-gray-400"
                         placeholder="Your name"
                       />
                     </div>
@@ -200,7 +200,7 @@ const Hero = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-10 pr-4 py-3 text-sm border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all duration-200 bg-white/80 placeholder-gray-400"
+                        className="w-full pl-10 pr-4 py-3 text-sm border border-gray-200 rounded-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all duration-200 bg-white/80 placeholder-gray-400"
                         placeholder="Mobile number"
                       />
                     </div>
@@ -209,7 +209,7 @@ const Hero = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-primary-500 to-accent-500 text-white py-3 px-4 rounded-xl text-sm font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
+                    className="w-full bg-gradient-to-r from-primary-500 to-accent-500 text-white py-3 px-4 rounded-none text-sm font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
                   >
                     {isSubmitting ? (
                       <div className="flex items-center">
