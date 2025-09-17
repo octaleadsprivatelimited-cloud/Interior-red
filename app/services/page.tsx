@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Home, Building, Palette, Ruler, Sofa, Wrench, Lightbulb, CheckCircle, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Our Services - Elite Interior Design',
+  title: 'Our Services - Dream Space Interiors',
   description: 'Comprehensive interior design services including residential design, commercial design, space planning, color consultation, and more.',
   keywords: ['interior design services', 'residential design', 'commercial design', 'space planning', 'color consultation'],
 };
@@ -25,7 +25,6 @@ const Services = () => {
       ],
       image: 'https://placehold.co/1200x800?text=Residential+Design',
       link: '/residential-design',
-      price: 'Starting at $5,000',
       duration: '4-8 weeks'
     },
     {
@@ -42,7 +41,6 @@ const Services = () => {
       ],
       image: 'https://placehold.co/1200x800?text=Commercial+Design',
       link: '/commercial-design',
-      price: 'Starting at $10,000',
       duration: '6-12 weeks'
     },
     {
@@ -59,7 +57,6 @@ const Services = () => {
       ],
       image: 'https://placehold.co/1200x800?text=Color+Consultation',
       link: '/color-consultation',
-      price: 'Starting at $500',
       duration: '1-2 weeks'
     },
     {
@@ -201,11 +198,6 @@ const Services = () => {
                       <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
-                    </div>
-                    <div className="absolute top-4 right-4">
-                      <span className="px-3 py-1 bg-white/90 text-accent text-sm font-medium rounded-full">
-                        {service.price}
-                      </span>
                     </div>
                   </div>
                   

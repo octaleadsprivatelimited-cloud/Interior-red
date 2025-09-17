@@ -12,11 +12,11 @@ const siteUrl =
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Elite Interior Design - Transform Your Space with Style',
-    template: '%s | Elite Interior Design'
-  },
-  description: 'Professional interior design services for residential and commercial spaces. Expert designers creating stunning, functional interiors that reflect your unique style and vision.',
+        title: {
+          default: 'Dream Space Interiors - Transform Your Space with Style',
+          template: '%s | Dream Space Interiors'
+        },
+        description: 'Professional interior design services for residential and commercial spaces. Expert designers creating stunning, functional interiors that reflect your unique style and vision.',
   keywords: [
     'interior design',
     'interior designer',
@@ -127,9 +127,9 @@ export const metadata: Metadata = {
     'interior design home garden',
     'interior design outdoor living'
   ],
-  authors: [{ name: 'Elite Interior Design' }],
-  creator: 'Elite Interior Design',
-  publisher: 'Elite Interior Design',
+        authors: [{ name: 'Dream Space Interiors' }],
+        creator: 'Dream Space Interiors',
+        publisher: 'Dream Space Interiors',
   formatDetection: {
     email: false,
     address: false,
@@ -143,21 +143,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'Elite Interior Design - Transform Your Space with Style',
-    description: 'Professional interior design services for residential and commercial spaces. Expert designers creating stunning, functional interiors.',
-    siteName: 'Elite Interior Design',
+            title: 'Dream Space Interiors - Transform Your Space with Style',
+            description: 'Professional interior design services for residential and commercial spaces. Expert designers creating stunning, functional interiors.',
+            siteName: 'Dream Space Interiors',
     images: [
       {
         url: 'https://placehold.co/1200x630?text=Elite+Interior+Design',
         width: 1200,
         height: 630,
-        alt: 'Elite Interior Design - Professional Interior Design Services',
+        alt: 'Dream Space Interiors - Professional Interior Design Services',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Elite Interior Design - Transform Your Space with Style',
+    title: 'Dream Space Interiors - Transform Your Space with Style',
     description: 'Professional interior design services for residential and commercial spaces.',
     images: ['https://placehold.co/1200x630?text=Elite+Interior+Design'],
   },
@@ -195,21 +195,21 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'Elite Interior Design',
+              name: 'Dream Space Interiors',
               url: siteUrl,
               logo: 'https://placehold.co/512x512?text=EID',
               sameAs: [],
               address: {
                 '@type': 'PostalAddress',
-                addressLocality: 'New York',
-                addressRegion: 'NY',
-                addressCountry: 'US',
+                addressLocality: 'Hyderabad',
+                addressRegion: 'Telangana',
+                addressCountry: 'IN',
               },
               contactPoint: [{
                 '@type': 'ContactPoint',
                 contactType: 'customer service',
-                telephone: '+1-555-123-4567',
-                areaServed: 'US',
+                telephone: '+91-8985456887',
+                areaServed: 'IN',
                 availableLanguage: ['English'],
               }],
             }),
@@ -222,7 +222,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               url: siteUrl,
-              name: 'Elite Interior Design',
+              name: 'Dream Space Interiors',
               potentialAction: {
                 '@type': 'SearchAction',
                 target: `${siteUrl}/search?q={search_term_string}`,

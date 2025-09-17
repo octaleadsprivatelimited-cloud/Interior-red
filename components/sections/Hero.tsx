@@ -3,15 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Play, Star, Award, Users, Clock, User, Phone, Send } from 'lucide-react';
+import { ArrowRight, Play, Star, Award, Users, Clock } from 'lucide-react';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const heroSlides = [
     {
@@ -51,33 +46,10 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Reset form
-    setFormData({ name: '', phone: '' });
-    setIsSubmitting(false);
-    
-    // Show success message
-    alert('Thank you! We\'ll contact you soon.');
-  };
-
   const currentSlideData = heroSlides[currentSlide];
 
   return (
-            <section className="relative min-h-[calc(100vh-48px)] lg:min-h-[calc(100vh-56px)] overflow-hidden">
+    <section className="relative min-h-[calc(100vh-48px)] lg:min-h-[calc(100vh-56px)] overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0">
         {heroSlides.map((slide, index) => (
@@ -100,135 +72,70 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center pt-0 lg:pt-0 py-16 lg:py-24">
-        <div className="container-custom px-4 w-full h-full">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 w-full h-full items-end">
+      <div className="relative z-10 h-full flex items-center py-16 lg:py-24">
+        <div className="container-custom px-4 w-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 w-full items-center">
             {/* Left Column - Hero Content */}
-            <div className="max-w-2xl mx-auto lg:justify-self-center self-end mb-6">
+            <div className="max-w-2xl">
+              <div className="mb-6">
+                <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
+                  ✨ Dream Space Interiors
+                </span>
+              </div>
               
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 lg:mb-4 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 lg:mb-8 leading-tight">
                 <span className="block">{currentSlideData.title}</span>
                 <span className="block text-accent-400">{currentSlideData.subtitle}</span>
               </h1>
               
-              <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 lg:mb-8 max-w-2xl leading-relaxed">
+              <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 lg:mb-12 max-w-2xl leading-relaxed">
                 {currentSlideData.description}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 mb-8 lg:mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mb-12 lg:mb-16">
                 <Link
                   href={currentSlideData.ctaLink}
-                  className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 text-base lg:text-lg inline-flex items-center justify-center group"
+                  className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 text-lg lg:text-xl inline-flex items-center justify-center group"
                 >
                   {currentSlideData.cta}
-                  <ArrowRight className="ml-2 w-4 h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                  <ArrowRight className="ml-2 w-5 h-5 lg:w-6 lg:h-6 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
                 
-                <button className="border-2 border-white text-white px-6 py-3 lg:px-8 lg:py-4 rounded-xl font-medium hover:bg-white hover:text-primary-600 transition-all duration-300 text-base lg:text-lg inline-flex items-center justify-center group">
-                  <Play className="mr-2 w-4 h-4 lg:w-5 lg:h-5" />
+                <button className="border-2 border-white text-white px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-medium hover:bg-white hover:text-primary-600 transition-all duration-300 text-lg lg:text-xl inline-flex items-center justify-center group">
+                  <Play className="mr-2 w-5 h-5 lg:w-6 lg:h-6" />
                   Watch Our Story
                 </button>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 <div className="text-center">
-                  <div className="flex items-center justify-center mb-1 lg:mb-2">
-                    <Users className="w-4 h-4 lg:w-6 lg:h-6 text-accent-400 mr-1 lg:mr-2" />
-                    <span className="text-xl lg:text-3xl font-bold text-white">500+</span>
+                  <div className="flex items-center justify-center mb-2 lg:mb-3">
+                    <Users className="w-6 h-6 lg:w-8 lg:h-8 text-accent-400 mr-2 lg:mr-3" />
+                    <span className="text-2xl lg:text-4xl font-bold text-white">500+</span>
                   </div>
-                  <p className="text-gray-300 text-xs lg:text-sm">Happy Clients</p>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-1 lg:mb-2">
-                    <Award className="w-4 h-4 lg:w-6 lg:h-6 text-accent-400 mr-1 lg:mr-2" />
-                    <span className="text-xl lg:text-3xl font-bold text-white">50+</span>
-                  </div>
-                  <p className="text-gray-300 text-xs lg:text-sm">Awards Won</p>
+                  <p className="text-gray-300 text-sm lg:text-base">Happy Clients</p>
                 </div>
                 <div className="text-center">
-                  <div className="flex items-center justify-center mb-1 lg:mb-2">
-                    <Star className="w-4 h-4 lg:w-6 lg:h-6 text-accent-400 mr-1 lg:mr-2" />
-                    <span className="text-xl lg:text-3xl font-bold text-white">4.9</span>
+                  <div className="flex items-center justify-center mb-2 lg:mb-3">
+                    <Award className="w-6 h-6 lg:w-8 lg:h-8 text-accent-400 mr-2 lg:mr-3" />
+                    <span className="text-2xl lg:text-4xl font-bold text-white">50+</span>
                   </div>
-                  <p className="text-gray-300 text-xs lg:text-sm">Client Rating</p>
+                  <p className="text-gray-300 text-sm lg:text-base">Awards Won</p>
                 </div>
                 <div className="text-center">
-                  <div className="flex items-center justify-center mb-1 lg:mb-2">
-                    <Clock className="w-4 h-4 lg:w-6 lg:h-6 text-accent-400 mr-1 lg:mr-2" />
-                    <span className="text-xl lg:text-3xl font-bold text-white">10+</span>
+                  <div className="flex items-center justify-center mb-2 lg:mb-3">
+                    <Star className="w-6 h-6 lg:w-8 lg:h-8 text-accent-400 mr-2 lg:mr-3" />
+                    <span className="text-2xl lg:text-4xl font-bold text-white">4.9</span>
                   </div>
-                  <p className="text-gray-300 text-xs lg:text-sm">Years Experience</p>
+                  <p className="text-gray-300 text-sm lg:text-base">Client Rating</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Right Column - Contact Form */}
-            <div className="max-w-md mx-auto lg:mx-0 lg:justify-self-end self-center">
-              <div className="bg-white/95 backdrop-blur-sm rounded-none p-6 shadow-2xl border border-white/20 relative overflow-hidden">
-                {/* Cute decorative elements */}
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent-400 rounded-full opacity-20"></div>
-                <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-primary-400 rounded-full opacity-20"></div>
-                
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Quick Quote</h3>
-                  <p className="text-gray-600 text-sm">Get your free consultation</p>
-                </div>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <div className="relative">
-                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full pl-10 pr-4 py-3 text-sm border border-gray-200 rounded-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all duration-200 bg-white/80 placeholder-gray-400"
-                        placeholder="Your name"
-                      />
-                    </div>
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-2 lg:mb-3">
+                    <Clock className="w-6 h-6 lg:w-8 lg:h-8 text-accent-400 mr-2 lg:mr-3" />
+                    <span className="text-2xl lg:text-4xl font-bold text-white">10+</span>
                   </div>
-
-                  <div>
-                    <div className="relative">
-                      <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full pl-10 pr-4 py-3 text-sm border border-gray-200 rounded-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all duration-200 bg-white/80 placeholder-gray-400"
-                        placeholder="Mobile number"
-                      />
-                    </div>
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-primary-500 to-accent-500 text-white py-3 px-4 rounded-none text-sm font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
-                  >
-                    {isSubmitting ? (
-                      <div className="flex items-center">
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                        Sending...
-                      </div>
-                    ) : (
-                      <>
-                        <Send className="w-5 h-5 mr-2" />
-                        Get Quote
-                      </>
-                    )}
-                  </button>
-                </form>
-
-                <div className="mt-4 text-center">
-                  <p className="text-xs text-gray-400">
-                    We'll call you back within 24 hours
-                  </p>
+                  <p className="text-gray-300 text-sm lg:text-base">Years Experience</p>
                 </div>
               </div>
             </div>

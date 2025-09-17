@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
 
-  const phoneNumber = '+15551234567'; // Replace with your WhatsApp number
+  const phoneNumber = '+918985456887'; // Dream Space Interiors WhatsApp number
   const defaultMessage = 'Hello! I\'m interested in your interior design services. Can you help me?';
 
   const handleWhatsAppClick = () => {
@@ -106,10 +106,10 @@ const WhatsAppButton = () => {
                 <p className="text-xs text-gray-500">
                   Or call us directly at{' '}
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+918985456887"
                     className="text-green-600 hover:underline"
                   >
-                    +1 (555) 123-4567
+                    +91 8985456887
                   </a>
                 </p>
               </div>

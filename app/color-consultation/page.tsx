@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Palette, CheckCircle, Star, Eye, Lightbulb, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Color Consultation Services - Elite Interior Design',
+  title: 'Color Consultation Services - Dream Space Interiors',
   description: 'Expert color guidance to create the perfect mood and atmosphere for your space with our professional color consultation services.',
   keywords: ['color consultation', 'color theory', 'interior color design', 'paint colors', 'color psychology'],
 };
@@ -16,28 +16,24 @@ const ColorConsultation = () => {
       description: 'Transform your home with the perfect color palette that reflects your personality and lifestyle.',
       features: ['Room-by-room color analysis', 'Color psychology guidance', 'Paint color selection', 'Sample testing'],
         image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      price: 'Starting at $500'
     },
     {
       title: 'Commercial Color Consultation',
       description: 'Create professional environments that enhance productivity and brand identity.',
       features: ['Brand color integration', 'Workplace psychology', 'Client area design', 'Employee wellness colors'],
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      price: 'Starting at $800'
     },
     {
       title: 'Exterior Color Consultation',
       description: 'Enhance your home\'s curb appeal with expert exterior color selection.',
       features: ['Curb appeal analysis', 'Architectural color harmony', 'Landscape integration', 'Neighborhood consideration'],
         image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      price: 'Starting at $600'
     },
     {
       title: 'Complete Color Package',
       description: 'Comprehensive color consultation for your entire home or business.',
       features: ['Full property analysis', '3D color visualization', 'Implementation guide', 'Follow-up support'],
         image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      price: 'Starting at $1,200'
     }
   ];
 
@@ -113,11 +109,6 @@ const ColorConsultation = () => {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-accent text-white text-sm font-medium rounded-full">
-                      {service.price}
-                    </span>
-                  </div>
                 </div>
                 
                 <div className="p-6">

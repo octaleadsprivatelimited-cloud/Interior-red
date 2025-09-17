@@ -54,14 +54,14 @@ const Header = () => {
             <div className="flex justify-between items-center text-sm">
               <div className="flex items-center space-x-6">
                 <div className="flex items-center space-x-2">
-                  <span>+1 (555) 123-4567</span>
+                        <span>+91 8985456887</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span>info@eliteinteriordesign.com</span>
+                  <span>info@dreamspaceinteriors.co</span>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
-                <span>New York, NY</span>
+                <span>Hyderabad, India</span>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Header = () => {
                 <Link href="/" className="flex items-center">
                   <img
                     src="/images/logo.png"
-                    alt="Elite Interior Design"
+                    alt="Dream Space Interiors"
                     className="h-[72px] w-auto"
                   />
                 </Link>
@@ -286,7 +286,7 @@ const Header = () => {
                               transition={{ duration: 0.2 }}
                             >
                               <Phone className="w-4 h-4 text-accent" />
-                              <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                              <a href="tel:+918985456887">+91 8985456887</a>
                             </motion.div>
                             <motion.div 
                               className="flex items-center space-x-3 text-sm text-gray-600"
@@ -294,7 +294,7 @@ const Header = () => {
                               transition={{ duration: 0.2 }}
                             >
                               <Mail className="w-4 h-4 text-accent" />
-                              <a href="mailto:info@eliteinteriordesign.com">info@eliteinteriordesign.com</a>
+                              <a href="mailto:info@dreamspaceinteriors.co">info@dreamspaceinteriors.co</a>
                             </motion.div>
                             <motion.div 
                               className="flex items-center space-x-3 text-sm text-gray-600"
@@ -302,7 +302,7 @@ const Header = () => {
                               transition={{ duration: 0.2 }}
                             >
                               <MapPin className="w-4 h-4 text-accent" />
-                              <span>New York, NY</span>
+                              <span>Hyderabad, India</span>
                             </motion.div>
                           </div>
                         </motion.div>

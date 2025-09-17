@@ -4,46 +4,12 @@ import Link from 'next/link';
 import { ArrowRight, Award, Users, Target, CheckCircle, Star, Quote } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About Us - Elite Interior Design',
-  description: 'Learn about Elite Interior Design, our mission, values, and the expert team behind our award-winning interior design services.',
+  title: 'About Us - Dream Space Interiors',
+  description: 'Learn about Dream Space Interiors, our mission, values, and the expert team behind our award-winning interior design services.',
   keywords: ['about us', 'interior design team', 'design company', 'our story', 'mission', 'values'],
 };
 
 const About = () => {
-  const team = [
-    {
-      name: 'Sarah Johnson',
-      role: 'Lead Interior Designer',
-      experience: '12 years',
-      image: '/images/team-1.jpg',
-      bio: 'Sarah specializes in residential design and has won multiple awards for her innovative approach to space planning.',
-      specialties: ['Residential Design', 'Space Planning', 'Color Theory']
-    },
-    {
-      name: 'Michael Chen',
-      role: 'Commercial Design Director',
-      experience: '10 years',
-      image: '/images/team-2.jpg',
-      bio: 'Michael leads our commercial design projects and has worked with Fortune 500 companies across the country.',
-      specialties: ['Commercial Design', 'Office Planning', 'Brand Integration']
-    },
-    {
-      name: 'Emily Rodriguez',
-      role: 'Senior Designer',
-      experience: '8 years',
-      image: '/images/team-3.jpg',
-      bio: 'Emily brings a fresh perspective to luxury interior design with her background in fine arts and architecture.',
-      specialties: ['Luxury Design', 'Art Integration', 'Custom Solutions']
-    },
-    {
-      name: 'David Kim',
-      role: 'Project Manager',
-      experience: '6 years',
-      image: '/images/team-4.jpg',
-      bio: 'David ensures every project runs smoothly from start to finish, coordinating with contractors and vendors.',
-      specialties: ['Project Management', 'Timeline Control', 'Quality Assurance']
-    }
-  ];
 
   const values = [
     {
@@ -93,7 +59,7 @@ const About = () => {
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
             About
-            <span className="block text-accent">Elite Interior Design</span>
+            <span className="block text-accent">Dream Space Interiors</span>
           </h1>
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             We are passionate designers dedicated to creating beautiful, 
@@ -122,7 +88,7 @@ const About = () => {
                 <span className="block text-accent">of Excellence</span>
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Elite Interior Design was founded in 2013 with a simple yet powerful vision: 
+                Dream Space Interiors was founded in 2013 with a simple yet powerful vision: 
                 to transform ordinary spaces into extraordinary experiences. What started as 
                 a small team of passionate designers has grown into one of the most respected 
                 interior design firms in the industry.
@@ -193,57 +159,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
-              Meet Our Team
-            </span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Expert Designers
-              <span className="block text-accent">Behind Every Project</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Our talented team of designers brings together years of experience, 
-              creativity, and passion for interior design.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="text-center group">
-                <div className="relative mb-6">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={300}
-                    height={300}
-                    className="w-full h-80 object-cover rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-accent font-medium mb-2">{member.role}</p>
-                <p className="text-gray-600 text-sm mb-4">{member.experience} experience</p>
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">{member.bio}</p>
-                
-                <div className="space-y-2">
-                  {member.specialties.map((specialty, specIndex) => (
-                    <span
-                      key={specIndex}
-                      className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full mr-2 mb-2"
-                    >
-                      {specialty}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Testimonial */}
       <section className="section-padding bg-gradient-to-br from-accent to-brown-600 text-white">
@@ -251,7 +166,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="w-16 h-16 mx-auto mb-8 opacity-80" />
             <blockquote className="text-2xl lg:text-3xl font-medium mb-8 leading-relaxed">
-              "Working with Elite Interior Design was an absolute pleasure. Their attention 
+              "Working with Dream Space Interiors was an absolute pleasure. Their attention 
               to detail and creative vision transformed our home beyond our expectations. 
               The team's professionalism and expertise made the entire process seamless."
             </blockquote>

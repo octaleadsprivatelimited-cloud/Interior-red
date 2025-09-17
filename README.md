@@ -1,4 +1,4 @@
-# Elite Interior Design Website
+# Dream Space Interiors Website
 
 A stunning, professional interior design website built with Next.js 14, React 18, and TypeScript. Features 20+ pages, responsive design, SEO optimization, and modern UI/UX.
 
@@ -80,7 +80,7 @@ A stunning, professional interior design website built with Next.js 14, React 18
    Create a `.env.local` file in the root directory:
    ```env
    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-   NEXT_PUBLIC_SITE_URL=https://eliteinteriordesign.com
+   NEXT_PUBLIC_SITE_URL=https://dreamspaceinteriors.co
    ```
 
 4. **Run the development server**
@@ -192,13 +192,13 @@ The website uses a custom color palette defined in `tailwind.config.js`:
 ## 📞 Support
 
 For support and questions:
-- Email: info@eliteinteriordesign.com
-- Phone: +1 (555) 123-4567
-- Website: [https://eliteinteriordesign.com](https://eliteinteriordesign.com)
+- Email: info@dreamspaceinteriors.co
+- Phone: +91 8985456887
+- Website: [https://dreamspaceinteriors.co](https://dreamspaceinteriors.co)
 
 ## 📄 License
 
-This project is developed by [OctaLeads](https://www.octaleads.com) for Elite Interior Design.
+This project is developed by [OctaLeads](https://www.octaleads.com) for Dream Space Interiors.
 
 ---
 

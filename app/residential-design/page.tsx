@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Home, CheckCircle, Star, Clock, DollarSign, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Residential Interior Design Services - Elite Interior Design',
+  title: 'Residential Interior Design Services - Dream Space Interiors',
   description: 'Transform your home with our expert residential interior design services. Custom solutions for every room, from living spaces to bedrooms.',
   keywords: ['residential interior design', 'home design', 'interior design services', 'home renovation', 'room design'],
 };
@@ -16,28 +16,24 @@ const ResidentialDesign = () => {
       description: 'Create inviting living spaces that reflect your lifestyle and provide comfort for family and guests.',
       features: ['Furniture arrangement', 'Color coordination', 'Lighting design', 'Accessory selection'],
         image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      price: 'Starting at $2,500'
     },
     {
       title: 'Kitchen Design',
       description: 'Design functional and beautiful kitchens that are the heart of your home.',
       features: ['Layout optimization', 'Cabinet design', 'Countertop selection', 'Appliance integration'],
         image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      price: 'Starting at $5,000'
     },
     {
       title: 'Bedroom Design',
       description: 'Create peaceful, restful bedrooms that promote relaxation and well-being.',
       features: ['Bed placement', 'Storage solutions', 'Color psychology', 'Lighting design'],
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      price: 'Starting at $2,000'
     },
     {
       title: 'Bathroom Design',
       description: 'Transform your bathroom into a spa-like retreat with modern fixtures and finishes.',
       features: ['Layout planning', 'Fixture selection', 'Tile design', 'Storage solutions'],
         image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      price: 'Starting at $3,500'
     }
   ];
 
@@ -118,11 +114,6 @@ const ResidentialDesign = () => {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-accent text-white text-sm font-medium rounded-full">
-                      {service.price}
-                    </span>
-                  </div>
                 </div>
                 
                 <div className="p-6">

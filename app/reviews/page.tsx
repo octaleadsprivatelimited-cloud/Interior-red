@@ -18,85 +18,73 @@ const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Priya Sharma',
       role: 'Homeowner',
-      location: 'New York, NY',
       project: 'Complete Home Renovation',
       rating: 5,
       date: '2024-01-15',
       category: 'residential',
-      image: 'https://placehold.co/400x400?text=Sarah+Johnson',
-      content: 'Elite Interior Design transformed our outdated home into a stunning modern space. Their attention to detail and creative solutions exceeded our expectations. The team was professional, punctual, and truly listened to our needs. We couldn\'t be happier with the results!',
+      content: 'Dream Space Interiors transformed our outdated home into a stunning modern space. Their attention to detail and creative solutions exceeded our expectations. The team was professional, punctual, and truly listened to our needs. We couldn\'t be happier with the results!',
       verified: true,
       helpful: 12
     },
     {
       id: 2,
-      name: 'Michael Chen',
+      name: 'Rajesh Kumar',
       role: 'CEO, TechStart Inc.',
-      location: 'San Francisco, CA',
       project: 'Corporate Office Design',
       rating: 5,
       date: '2024-01-10',
       category: 'commercial',
-      image: 'https://placehold.co/400x400?text=Michael+Chen',
-      content: 'We needed a modern office space that would inspire our team and impress clients. Elite Interior Design delivered beyond our wildest dreams. The space is not only beautiful but also highly functional for our growing team. Highly recommend!',
+      content: 'We needed a modern office space that would inspire our team and impress clients. Dream Space Interiors delivered beyond our wildest dreams. The space is not only beautiful but also highly functional for our growing team. Highly recommend!',
       verified: true,
       helpful: 8
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
+      name: 'Anita Reddy',
       role: 'Restaurant Owner',
-      location: 'Los Angeles, CA',
       project: 'Restaurant Interior Design',
       rating: 5,
       date: '2024-01-05',
       category: 'commercial',
-      image: 'https://placehold.co/400x400?text=Emily+Rodriguez',
       content: 'The restaurant design they created for us is absolutely perfect. It captures the essence of our brand while providing an amazing dining experience for our customers. Our business has grown significantly since the renovation.',
       verified: true,
       helpful: 15
     },
     {
       id: 4,
-      name: 'David Kim',
+      name: 'Vikram Singh',
       role: 'Real Estate Developer',
-      location: 'Miami, FL',
       project: 'Luxury Condominium Design',
       rating: 5,
       date: '2023-12-28',
       category: 'luxury',
-      image: 'https://placehold.co/400x400?text=David+Kim',
-      content: 'Working with Elite Interior Design on our luxury condominium project was a game-changer. Their expertise in high-end residential design helped us achieve record sales. The attention to detail and quality of work is unmatched.',
+      content: 'Working with Dream Space Interiors on our luxury condominium project was a game-changer. Their expertise in high-end residential design helped us achieve record sales. The attention to detail and quality of work is unmatched.',
       verified: true,
       helpful: 20
     },
     {
       id: 5,
-      name: 'Lisa Thompson',
+      name: 'Sneha Patel',
       role: 'Interior Designer',
-      location: 'Chicago, IL',
       project: 'Collaborative Design Project',
       rating: 5,
       date: '2023-12-20',
       category: 'residential',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
-      content: 'As a fellow designer, I can attest to the exceptional quality of work from Elite Interior Design. Their innovative approach and flawless execution make them stand out in the industry. Truly professional and creative team.',
+      content: 'As a fellow designer, I can attest to the exceptional quality of work from Dream Space Interiors. Their innovative approach and flawless execution make them stand out in the industry. Truly professional and creative team.',
       verified: true,
       helpful: 6
     },
     {
       id: 6,
-      name: 'Jennifer Martinez',
+      name: 'Arjun Mehta',
       role: 'Homeowner',
-      location: 'Beverly Hills, CA',
       project: 'Luxury Home Renovation',
       rating: 5,
       date: '2023-12-15',
       category: 'luxury',
-      image: 'https://placehold.co/400x400?text=Jennifer+Martinez',
-      content: 'The team at Elite Interior Design created a masterpiece in our home. Every detail was carefully considered, from the color palette to the furniture selection. The project was completed on time and within budget. Absolutely stunning work!',
+      content: 'The team at Dream Space Interiors created a masterpiece in our home. Every detail was carefully considered, from the color palette to the furniture selection. The project was completed on time and within budget. Absolutely stunning work!',
       verified: true,
       helpful: 18
     }
@@ -296,18 +284,9 @@ const Reviews = () => {
               <div key={review.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center space-x-3">
-                    <Image
-                      src={review.image}
-                      alt={review.name}
-                      width={50}
-                      height={50}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <h3 className="font-bold text-gray-900">{review.name}</h3>
-                      <p className="text-sm text-gray-600">{review.role}</p>
-                    </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">{review.name}</h3>
+                    <p className="text-sm text-gray-600">{review.role}</p>
                   </div>
                   {review.verified && (
                     <span className="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">
@@ -333,11 +312,7 @@ const Reviews = () => {
 
                 {/* Project Info */}
                 <div className="border-t pt-4">
-                  <div className="flex items-center justify-between text-sm text-gray-500 mb-2">
-                    <div className="flex items-center">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      <span>{review.location}</span>
-                    </div>
+                  <div className="flex items-center justify-end text-sm text-gray-500 mb-2">
                     <div className="flex items-center">
                       <Calendar className="w-4 h-4 mr-1" />
                       <span>{new Date(review.date).toLocaleDateString()}</span>

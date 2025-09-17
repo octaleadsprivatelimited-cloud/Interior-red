@@ -31,18 +31,14 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', href: 'https://facebook.com/eliteinteriordesign', icon: Facebook },
-    { name: 'Instagram', href: 'https://instagram.com/eliteinteriordesign', icon: Instagram },
-    { name: 'Twitter', href: 'https://twitter.com/eliteinteriordesign', icon: Twitter },
-    { name: 'LinkedIn', href: 'https://linkedin.com/company/eliteinteriordesign', icon: Linkedin },
-    { name: 'YouTube', href: 'https://youtube.com/eliteinteriordesign', icon: Youtube },
+            { name: 'Instagram', href: 'https://www.instagram.com/dreamspaceinteriorsdecors', icon: Instagram },
   ];
 
   return (
     <footer className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
       <div className="container-custom section-padding">
         <div className="text-center mb-10">
-          <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent">Elite Interior Design</h3>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent">Dream Space Interiors</h3>
           <p className="text-neutral-300">Transform Your Space</p>
         </div>
 
@@ -80,15 +76,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-primary-400 flex-shrink-0" />
-                <a href="tel:+15551234567" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm font-medium">+1 (555) 123-4567</a>
+                        <a href="tel:+918985456887" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm font-medium">+91 8985456887</a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent-400 flex-shrink-0" />
-                <a href="mailto:info@eliteinteriordesign.com" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm font-medium">info@eliteinteriordesign.com</a>
+                <a href="mailto:info@dreamspaceinteriors.co" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm font-medium">info@dreamspaceinteriors.co</a>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-primary-400 mt-1 flex-shrink-0" />
-                <p className="text-neutral-300 text-sm font-medium">123 Design Street<br />New York, NY 10001</p>
+                <p className="text-neutral-300 text-sm font-medium">Primark DeStature, F block 702<br />Bachupally, Hyderabad</p>
               </div>
             </div>
           </div>
@@ -117,7 +113,7 @@ const Footer = () => {
 
         <div className="border-t border-neutral-700/50 pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p className="text-neutral-400 text-sm font-medium">© {currentYear} Elite Interior Design. All rights reserved.</p>
+                    <p className="text-neutral-400 text-sm font-medium">© {currentYear} Dream Space Interiors. All rights reserved.</p>
             <p className="text-neutral-400 text-sm font-medium">Developed by <a href="https://www.octaleads.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 font-semibold">octaleads</a></p>
           </div>
         </div>

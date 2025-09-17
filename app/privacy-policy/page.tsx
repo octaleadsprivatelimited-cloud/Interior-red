@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { ArrowLeft, Shield, Eye, Lock, Database, UserCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Elite Interior Design',
-  description: 'Learn how Elite Interior Design protects your privacy and handles your personal information.',
+  title: 'Privacy Policy - Dream Space Interiors',
+  description: 'Learn how Dream Space Interiors protects your privacy and handles your personal information.',
   keywords: ['privacy policy', 'data protection', 'privacy', 'personal information'],
 };
 
@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed mb-8">
-                At Elite Interior Design, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services.
+                At Dream Space Interiors, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services.
               </p>
 
               <div className="space-y-8">
@@ -93,8 +93,8 @@ const PrivacyPolicy = () => {
                   If you have any questions about this Privacy Policy or our data practices, please contact us:
                 </p>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Email:</strong> privacy@eliteinteriordesign.com</p>
-                  <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                  <p><strong>Email:</strong> privacy@dreamspaceinteriors.co</p>
+                  <p><strong>Phone:</strong> +91 8985456887</p>
                   <p><strong>Address:</strong> 123 Design Street, New York, NY 10001</p>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Ruler, CheckCircle, Star, Home, Users, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Space Planning Services - Elite Interior Design',
+  title: 'Space Planning Services - Dream Space Interiors',
   description: 'Professional space planning services to optimize your layout for maximum functionality and visual appeal.',
   keywords: ['space planning', 'interior layout', 'floor plan design', 'room arrangement', 'space optimization'],
 };
@@ -15,29 +15,25 @@ const SpacePlanning = () => {
       title: 'Residential Space Planning',
       description: 'Optimize your home layout for better flow, functionality, and visual appeal.',
       features: ['Room layout optimization', 'Traffic flow analysis', 'Furniture placement', 'Storage solutions'],
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      price: 'Starting at $1,500'
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop'
     },
     {
       title: 'Commercial Space Planning',
       description: 'Design efficient work environments that boost productivity and collaboration.',
       features: ['Office layout design', 'Workflow optimization', 'Meeting room planning', 'Reception areas'],
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      price: 'Starting at $3,000'
+        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop'
     },
     {
       title: 'Small Space Solutions',
       description: 'Maximize functionality in compact spaces with clever design solutions.',
       features: ['Multi-purpose areas', 'Storage optimization', 'Visual space expansion', 'Flexible layouts'],
-        image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      price: 'Starting at $1,000'
+        image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop'
     },
     {
       title: '3D Visualization',
       description: 'See your space before implementation with detailed 3D renderings.',
       features: ['3D floor plans', 'Virtual walkthroughs', 'Material visualization', 'Lighting simulation'],
-        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      price: 'Starting at $800'
+        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'
     }
   ];
 
@@ -113,11 +109,6 @@ const SpacePlanning = () => {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-accent text-white text-sm font-medium rounded-full">
-                      {service.price}
-                    </span>
-                  </div>
                 </div>
                 
                 <div className="p-6">

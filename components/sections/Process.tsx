@@ -137,7 +137,7 @@ const Process = () => {
         <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-lg">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Elite Interior Design?
+              Why Choose Dream Space Interiors?
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We combine creativity, expertise, and attention to detail to deliver 

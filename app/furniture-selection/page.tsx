@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Sofa, CheckCircle, Star, Home, Users, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Furniture Selection Services - Elite Interior Design',
+  title: 'Furniture Selection Services - Dream Space Interiors',
   description: 'Curate the perfect furniture pieces that combine style, comfort, and durability with our expert furniture selection services.',
   keywords: ['furniture selection', 'interior furniture', 'furniture design', 'custom furniture', 'furniture consultation'],
 };
@@ -15,29 +15,25 @@ const FurnitureSelection = () => {
       title: 'Residential Furniture Selection',
       description: 'Choose furniture that perfectly complements your home\'s style and meets your family\'s needs.',
       features: ['Living room furniture', 'Bedroom sets', 'Dining room pieces', 'Storage solutions'],
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      price: 'Starting at $2,000'
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop'
     },
     {
       title: 'Commercial Furniture Selection',
       description: 'Select furniture that enhances productivity and creates professional work environments.',
       features: ['Office furniture', 'Reception areas', 'Meeting rooms', 'Break areas'],
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      price: 'Starting at $5,000'
+        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop'
     },
     {
       title: 'Custom Furniture Design',
       description: 'Create one-of-a-kind pieces tailored to your specific needs and space requirements.',
       features: ['Custom design', 'Material selection', 'Size optimization', 'Unique finishes'],
-        image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      price: 'Starting at $3,000'
+        image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop'
     },
     {
       title: 'Furniture Styling',
       description: 'Arrange and style your existing furniture to maximize both function and visual appeal.',
       features: ['Space planning', 'Accessory selection', 'Color coordination', 'Layout optimization'],
-        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      price: 'Starting at $1,500'
+        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'
     }
   ];
 
@@ -113,11 +109,6 @@ const FurnitureSelection = () => {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-accent text-white text-sm font-medium rounded-full">
-                      {service.price}
-                    </span>
-                  </div>
                 </div>
                 
                 <div className="p-6">

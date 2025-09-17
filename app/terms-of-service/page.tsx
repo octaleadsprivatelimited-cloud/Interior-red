@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { ArrowLeft, FileText, Scale, Shield, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - Elite Interior Design',
-  description: 'Read our terms of service and understand the conditions for using Elite Interior Design services.',
+  title: 'Terms of Service - Dream Space Interiors',
+  description: 'Read our terms of service and understand the conditions for using Dream Space Interiors services.',
   keywords: ['terms of service', 'terms and conditions', 'legal terms', 'service agreement'],
 };
 
@@ -64,7 +64,7 @@ const TermsOfService = () => {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed mb-8">
-                These Terms of Service govern your use of Elite Interior Design's website and services. By using our services, you agree to these terms.
+                These Terms of Service govern your use of Dream Space Interiors's website and services. By using our services, you agree to these terms.
               </p>
 
               <div className="space-y-8">
@@ -88,8 +88,8 @@ const TermsOfService = () => {
                   If you have any questions about these Terms of Service, please contact us:
                 </p>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Email:</strong> legal@eliteinteriordesign.com</p>
-                  <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                  <p><strong>Email:</strong> legal@dreamspaceinteriors.co</p>
+                  <p><strong>Phone:</strong> +91 8985456887</p>
                   <p><strong>Address:</strong> 123 Design Street, New York, NY 10001</p>
                 </div>
               </div>

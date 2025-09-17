@@ -10,52 +10,42 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Priya Sharma',
       role: 'Homeowner',
-      location: 'New York, NY',
       rating: 5,
-      content: 'Elite Interior Design transformed our outdated home into a stunning modern space. Their attention to detail and creative solutions exceeded our expectations. The team was professional, punctual, and truly listened to our needs.',
-      image: 'https://placehold.co/400x400?text=Sarah+Johnson',
+      content: 'Dream Space Interiors transformed our outdated home into a stunning modern space. Their attention to detail and creative solutions exceeded our expectations. The team was professional, punctual, and truly listened to our needs.',
       project: 'Complete Home Renovation'
     },
     {
       id: 2,
-      name: 'Michael Chen',
+      name: 'Rajesh Kumar',
       role: 'CEO, TechStart Inc.',
-      location: 'San Francisco, CA',
       rating: 5,
-      content: 'We needed a modern office space that would inspire our team and impress clients. Elite Interior Design delivered beyond our wildest dreams. The space is not only beautiful but also highly functional for our growing team.',
-      image: 'https://placehold.co/400x400?text=Michael+Chen',
+      content: 'We needed a modern office space that would inspire our team and impress clients. Dream Space Interiors delivered beyond our wildest dreams. The space is not only beautiful but also highly functional for our growing team.',
       project: 'Corporate Office Design'
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
+      name: 'Anita Reddy',
       role: 'Restaurant Owner',
-      location: 'Los Angeles, CA',
       rating: 5,
       content: 'The restaurant design they created for us is absolutely perfect. It captures the essence of our brand while providing an amazing dining experience for our customers. Our business has grown significantly since the renovation.',
-      image: 'https://placehold.co/400x400?text=Emily+Rodriguez',
       project: 'Restaurant Interior Design'
     },
     {
       id: 4,
-      name: 'David Kim',
+      name: 'Vikram Singh',
       role: 'Real Estate Developer',
-      location: 'Miami, FL',
       rating: 5,
-      content: 'Working with Elite Interior Design on our luxury condominium project was a game-changer. Their expertise in high-end residential design helped us achieve record sales. Highly recommend their services.',
-      image: 'https://placehold.co/400x400?text=David+Kim',
+      content: 'Working with Dream Space Interiors on our luxury condominium project was a game-changer. Their expertise in high-end residential design helped us achieve record sales. Highly recommend their services.',
       project: 'Luxury Condominium Design'
     },
     {
       id: 5,
-      name: 'Lisa Thompson',
+      name: 'Sneha Patel',
       role: 'Interior Designer',
-      location: 'Chicago, IL',
       rating: 5,
-      content: 'As a fellow designer, I can attest to the exceptional quality of work from Elite Interior Design. Their innovative approach and flawless execution make them stand out in the industry. Truly professional.',
-      image: 'https://placehold.co/400x400?text=Lisa+Thompson',
+      content: 'As a fellow designer, I can attest to the exceptional quality of work from Dream Space Interiors. Their innovative approach and flawless execution make them stand out in the industry. Truly professional.',
       project: 'Collaborative Design Project'
     }
   ];
@@ -126,21 +116,10 @@ const Testimonials = () => {
               </div>
 
               {/* Client Info */}
-              <div className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-6">
-                <div className="relative">
-                  <Image
-                    src={currentTestimonialData.image}
-                    alt={currentTestimonialData.name}
-                    width={80}
-                    height={80}
-                    className="w-20 h-20 rounded-full object-cover border-4 border-white/20"
-                  />
-                </div>
-                
-                <div className="text-center lg:text-left">
+              <div className="flex flex-col items-center justify-center space-y-2">
+                <div className="text-center">
                   <h4 className="text-xl font-bold mb-1">{currentTestimonialData.name}</h4>
                   <p className="text-white/80 mb-1">{currentTestimonialData.role}</p>
-                  <p className="text-white/60 text-sm">{currentTestimonialData.location}</p>
                   <p className="text-white/60 text-sm font-medium">{currentTestimonialData.project}</p>
                 </div>
               </div>

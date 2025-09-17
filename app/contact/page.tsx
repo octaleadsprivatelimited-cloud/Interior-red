@@ -52,16 +52,16 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543'],
+      details: ['+91 8985456887', '+91 9876543210'],
       action: 'Call Now',
-      href: 'tel:+15551234567'
+      href: 'tel:+918985456887'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@eliteinteriordesign.com', 'projects@eliteinteriordesign.com'],
+      details: ['info@dreamspaceinteriors.co', 'projects@dreamspaceinteriors.co'],
       action: 'Send Email',
-      href: 'mailto:info@eliteinteriordesign.com'
+      href: 'mailto:info@dreamspaceinteriors.co'
     },
     {
       icon: MapPin,

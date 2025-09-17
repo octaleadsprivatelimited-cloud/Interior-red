@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Wrench, CheckCircle, Star, Home, Users, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Renovation Services - Elite Interior Design',
+  title: 'Renovation Services - Dream Space Interiors',
   description: 'Complete renovation solutions from concept to completion with minimal disruption. Professional renovation services for homes and businesses.',
   keywords: ['renovation services', 'home renovation', 'interior renovation', 'renovation design', 'project management'],
 };
@@ -16,28 +16,24 @@ const RenovationServices = () => {
       description: 'Transform your kitchen into a beautiful, functional space that\'s the heart of your home.',
       features: ['Layout redesign', 'Cabinet installation', 'Countertop selection', 'Appliance integration'],
         image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      price: 'Starting at $15,000'
     },
     {
       title: 'Bathroom Renovation',
       description: 'Create a spa-like retreat with modern fixtures and finishes.',
       features: ['Plumbing updates', 'Tile installation', 'Fixture selection', 'Lighting design'],
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      price: 'Starting at $12,000'
     },
     {
       title: 'Living Space Renovation',
       description: 'Refresh your living areas with modern design and improved functionality.',
       features: ['Flooring updates', 'Wall treatments', 'Lighting installation', 'Furniture placement'],
         image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      price: 'Starting at $8,000'
     },
     {
       title: 'Complete Home Renovation',
       description: 'Transform your entire home with a comprehensive renovation project.',
       features: ['Full home design', 'Structural updates', 'Systems upgrade', 'Finishing touches'],
         image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      price: 'Starting at $50,000'
     }
   ];
 
@@ -113,11 +109,6 @@ const RenovationServices = () => {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-accent text-white text-sm font-medium rounded-full">
-                      {service.price}
-                    </span>
-                  </div>
                 </div>
                 
                 <div className="p-6">

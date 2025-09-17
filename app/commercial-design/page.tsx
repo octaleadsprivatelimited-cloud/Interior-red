@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Building, CheckCircle, Star, Users, Target, Award } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Commercial Interior Design Services - Elite Interior Design',
+  title: 'Commercial Interior Design Services - Dream Space Interiors',
   description: 'Professional commercial interior design services for offices, retail spaces, restaurants, and more. Boost productivity and impress clients.',
   keywords: ['commercial interior design', 'office design', 'retail design', 'restaurant design', 'workplace design'],
 };
@@ -15,29 +15,25 @@ const CommercialDesign = () => {
       title: 'Office Design',
       description: 'Create productive work environments that inspire creativity and collaboration.',
       features: ['Open plan layouts', 'Private offices', 'Meeting rooms', 'Break areas', 'Reception design'],
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      price: 'Starting at $15,000'
+        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop'
     },
     {
       title: 'Retail Design',
       description: 'Design retail spaces that enhance customer experience and drive sales.',
       features: ['Store layout', 'Product display', 'Customer flow', 'Brand integration', 'Lighting design'],
-        image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      price: 'Starting at $20,000'
+        image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop'
     },
     {
       title: 'Restaurant Design',
       description: 'Create memorable dining experiences with innovative restaurant design.',
       features: ['Dining area layout', 'Kitchen design', 'Bar design', 'Ambiance creation', 'Brand storytelling'],
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      price: 'Starting at $25,000'
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop'
     },
     {
       title: 'Healthcare Design',
       description: 'Design healing environments that promote patient comfort and staff efficiency.',
       features: ['Patient rooms', 'Waiting areas', 'Treatment rooms', 'Staff areas', 'Compliance standards'],
-        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      price: 'Starting at $30,000'
+        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'
     }
   ];
 
@@ -113,11 +109,6 @@ const CommercialDesign = () => {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-accent text-white text-sm font-medium rounded-full">
-                      {service.price}
-                    </span>
-                  </div>
                 </div>
                 
                 <div className="p-6">

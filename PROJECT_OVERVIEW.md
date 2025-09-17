@@ -1,4 +1,4 @@
-# Elite Interior Design Website - Project Overview
+# Dream Space Interiors Website - Project Overview
 
 ## 🎯 Project Summary
 
@@ -151,7 +151,7 @@ A comprehensive, professional interior design website built with modern technolo
 2. **Environment Variables**
    ```env
    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_api_key
-   NEXT_PUBLIC_SITE_URL=https://eliteinteriordesign.com
+   NEXT_PUBLIC_SITE_URL=https://dreamspaceinteriors.co
    ```
 
 3. **Run Development Server**
@@ -219,9 +219,9 @@ A comprehensive, professional interior design website built with modern technolo
 
 ### Contact Information
 - **Developer**: OctaLeads (https://www.octaleads.com)
-- **Client**: Elite Interior Design
-- **Email**: info@eliteinteriordesign.com
-- **Phone**: +1 (555) 123-4567
+- **Client**: Dream Space Interiors
+- **Email**: info@dreamspaceinteriors.co
+- **Phone**: +91 8985456887
 
 ---
 
