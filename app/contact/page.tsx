@@ -9,9 +9,8 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
+    phone: '+91 ',
     service: '',
-    budget: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,9 +35,8 @@ const Contact = () => {
       setFormData({
         name: '',
         email: '',
-        phone: '',
+        phone: '+91 ',
         service: '',
-        budget: '',
         message: ''
       });
     } catch (error) {
@@ -88,13 +86,6 @@ const Contact = () => {
     'Renovation Services'
   ];
 
-  const budgetRanges = [
-    'Under $10,000',
-    '$10,000 - $25,000',
-    '$25,000 - $50,000',
-    '$50,000 - $100,000',
-    'Over $100,000'
-  ];
 
   return (
     <div className="min-h-screen">
@@ -215,7 +206,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-200"
-                      placeholder="(555) 123-4567"
+                      placeholder="+91 9876543210"
                     />
                   </div>
                   
@@ -238,23 +229,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
-                    Project Budget
-                  </label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-200"
-                  >
-                    <option value="">Select budget range</option>
-                    {budgetRanges.map((range, index) => (
-                      <option key={index} value={range}>{range}</option>
-                    ))}
-                  </select>
-                </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
