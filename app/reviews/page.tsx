@@ -2,11 +2,10 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Star, Quote, ChevronLeft, ChevronRight, Filter, Calendar, MapPin } from 'lucide-react';
+import { Star, Quote, Filter, Calendar, MapPin } from 'lucide-react';
 
 const Reviews = () => {
   const [selectedFilter, setSelectedFilter] = useState('all');
-  const [currentReview, setCurrentReview] = useState(0);
 
   const filters = [
     { id: 'all', name: 'All Reviews', count: 127 },
@@ -94,13 +93,6 @@ const Reviews = () => {
     ? reviews 
     : reviews.filter(review => review.category === selectedFilter);
 
-  const nextReview = () => {
-    setCurrentReview((prev) => (prev + 1) % filteredReviews.length);
-  };
-
-  const prevReview = () => {
-    setCurrentReview((prev) => (prev - 1 + filteredReviews.length) % filteredReviews.length);
-  };
 
   const stats = [
     { label: 'Total Reviews', value: '127' },
@@ -149,104 +141,6 @@ const Reviews = () => {
         </div>
       </section>
 
-      {/* Featured Review Carousel */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Featured
-              <span className="block text-accent">Testimonials</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Discover why our clients choose us for their interior design needs.
-            </p>
-          </div>
-
-          <div className="relative max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-accent to-brown-600 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
-              
-              <div className="relative z-10">
-                {/* Quote Icon */}
-                <div className="flex justify-center mb-8">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                    <Quote className="w-8 h-8" />
-                  </div>
-                </div>
-
-                {/* Review Content */}
-                <div className="text-center mb-8">
-                  <p className="text-xl lg:text-2xl leading-relaxed mb-8 italic">
-                    "{filteredReviews[currentReview]?.content}"
-                  </p>
-                  
-                  {/* Rating */}
-                  <div className="flex justify-center mb-6">
-                    {[...Array(filteredReviews[currentReview]?.rating || 5)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                </div>
-
-                {/* Client Info */}
-                <div className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-6">
-                  <div className="relative">
-                    <Image
-                      src={filteredReviews[currentReview]?.image || '/images/default-avatar.jpg'}
-                      alt={filteredReviews[currentReview]?.name || 'Client'}
-                      width={80}
-                      height={80}
-                      className="w-20 h-20 rounded-full object-cover border-4 border-white/20"
-                    />
-                  </div>
-                  
-                  <div className="text-center lg:text-left">
-                    <h4 className="text-xl font-bold mb-1">{filteredReviews[currentReview]?.name}</h4>
-                    <p className="text-white/80 mb-1">{filteredReviews[currentReview]?.role}</p>
-                    <p className="text-white/60 text-sm">{filteredReviews[currentReview]?.location}</p>
-                    <p className="text-white/60 text-sm font-medium">{filteredReviews[currentReview]?.project}</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Navigation Arrows */}
-              <button
-                onClick={prevReview}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors duration-200"
-                aria-label="Previous review"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              
-              <button
-                onClick={nextReview}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors duration-200"
-                aria-label="Next review"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
-
-            {/* Dots Indicator */}
-            <div className="flex justify-center mt-8 space-x-2">
-              {filteredReviews.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentReview(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentReview
-                      ? 'bg-accent scale-125'
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
-                  aria-label={`Go to review ${index + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* All Reviews */}
       <section className="section-padding bg-white">
