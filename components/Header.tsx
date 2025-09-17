@@ -132,7 +132,7 @@ const Header = () => {
               </nav>
 
               {/* Right side - CTA Button (desktop) and Mobile Menu Button */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
                 {/* CTA Button - Desktop only */}
                 <div className="hidden lg:flex">
                   <Link
@@ -142,6 +142,22 @@ const Header = () => {
                     Get Free Quote
                   </Link>
                 </div>
+
+                {/* WhatsApp Button - Mobile only */}
+                <motion.a
+                  href="https://wa.me/918985456887?text=Hello!%20I'm%20interested%20in%20your%20interior%20design%20services.%20Can%20you%20help%20me?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="lg:hidden p-2 rounded-lg bg-green-500 hover:bg-green-600 transition-all duration-200 text-white"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="Chat on WhatsApp"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 2.079.549 4.125 1.595 5.918L.028 24l6.305-1.654c1.746.951 3.686 1.454 5.684 1.454h.005c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001zM12.017 19.362c-1.816 0-3.579-.49-5.11-1.424l-.366-.218-3.799.998.998-3.648-.235-.374c-.951-1.51-1.454-3.25-1.454-5.05 0-4.081 3.32-7.401 7.401-7.401s7.401 3.32 7.401 7.401-3.32 7.401-7.401 7.401z"/>
+                    <path d="M17.847 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  </svg>
+                </motion.a>
 
                 {/* Mobile Menu Button */}
                 <motion.button

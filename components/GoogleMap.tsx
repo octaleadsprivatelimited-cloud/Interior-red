@@ -1,23 +1,27 @@
 'use client';
 
-import { Wrapper, Status } from '@googlemaps/react-wrapper';
-
 const MapComponent = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-80 min-h-[320px] rounded-2xl shadow-lg bg-gray-200 flex items-center justify-center">
-        <div className="text-center text-gray-600">
-          <div className="text-4xl mb-4">🗺️</div>
-          <p className="text-lg font-medium">Interactive Map</p>
-          <p className="text-sm">Add your Google Maps API key to enable</p>
-        </div>
+      <div className="w-full h-80 min-h-[320px] rounded-2xl shadow-lg overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1234567890!2d78.1234567890!3d17.1234567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPrimark%20DeStature%20F%20block%20702%20Bachupally%20Hyderabad!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Dream Space Interiors Location - Primark DeStature, Bachupally, Hyderabad"
+        ></iframe>
       </div>
       <div className="mt-4 text-center">
         <p className="text-sm text-gray-600">
-          📍 123 Design Street, New York, NY 10001
+          📍 Primark DeStature, F block 702<br />
+          Bachupally, Hyderabad
         </p>
         <a
-          href="https://maps.google.com/?q=123+Design+Street+New+York+NY+10001"
+          href="https://maps.google.com/?q=Primark+DeStature+F+block+702+Bachupally+Hyderabad"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center text-accent hover:text-accent/80 font-medium mt-2"
@@ -30,30 +34,7 @@ const MapComponent = () => {
 };
 
 const GoogleMap = () => {
-  const render = (status: Status) => {
-    switch (status) {
-      case Status.LOADING:
-        return (
-          <div className="w-full h-80 rounded-2xl shadow-lg bg-gray-200 flex items-center justify-center">
-            <div className="text-center text-gray-600">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-accent mx-auto mb-4"></div>
-              <p>Loading map...</p>
-            </div>
-          </div>
-        );
-      case Status.FAILURE:
-        return <MapComponent />;
-      case Status.SUCCESS:
-        return <MapComponent />;
-    }
-  };
-
-  return (
-    <Wrapper
-      apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
-      render={render}
-    />
-  );
+  return <MapComponent />;
 };
 
 export default GoogleMap;

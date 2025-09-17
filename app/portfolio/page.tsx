@@ -22,7 +22,6 @@ const Portfolio = () => {
       title: 'Modern Family Home',
       category: 'residential',
       type: 'Complete Renovation',
-      location: 'New York, NY',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
       description: 'A stunning transformation of a traditional family home into a modern, functional space.',
@@ -33,7 +32,6 @@ const Portfolio = () => {
       title: 'Luxury Penthouse',
       category: 'luxury',
       type: 'Interior Design',
-      location: 'Manhattan, NY',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
       description: 'Elegant penthouse design with panoramic city views and premium finishes.',
@@ -44,7 +42,6 @@ const Portfolio = () => {
       title: 'Tech Startup Office',
       category: 'commercial',
       type: 'Office Design',
-      location: 'San Francisco, CA',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
       description: 'Innovative workspace design that promotes creativity and collaboration.',
@@ -55,7 +52,6 @@ const Portfolio = () => {
       title: 'Contemporary Living',
       category: 'modern',
       type: 'Space Planning',
-      location: 'Los Angeles, CA',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
       description: 'Clean, minimalist design with focus on natural light and open spaces.',
@@ -66,7 +62,6 @@ const Portfolio = () => {
       title: 'Boutique Hotel Lobby',
       category: 'commercial',
       type: 'Hospitality Design',
-      location: 'Miami, FL',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
       description: 'Sophisticated hotel lobby design that creates a memorable first impression.',
@@ -77,7 +72,6 @@ const Portfolio = () => {
       title: 'Cozy Apartment',
       category: 'residential',
       type: 'Small Space Design',
-      location: 'Brooklyn, NY',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
       description: 'Maximizing space in a small apartment with smart storage solutions.',
@@ -199,8 +193,7 @@ const Portfolio = () => {
                     {project.description}
                   </p>
                   
-                  <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                    <span>📍 {project.location}</span>
+                  <div className="flex items-center justify-end text-sm text-gray-500 mb-4">
                     <span className="capitalize">{project.category}</span>
                   </div>
                   

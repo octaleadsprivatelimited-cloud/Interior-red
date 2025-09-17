@@ -5,7 +5,6 @@ import Portfolio from '@/components/sections/Portfolio';
 import Testimonials from '@/components/sections/Testimonials';
 import Process from '@/components/sections/Process';
 // import Stats from '@/components/sections/Stats';
-import PopupModal from '@/components/PopupModal';
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <Portfolio />
       <Process />
       <Testimonials />
-      <PopupModal />
     </>
   );
 }

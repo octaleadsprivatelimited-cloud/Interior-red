@@ -50,23 +50,23 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91 8985456887', '+91 9876543210'],
+      details: ['+91 8985456887'],
       action: 'Call Now',
       href: 'tel:+918985456887'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@dreamspaceinteriors.co', 'projects@dreamspaceinteriors.co'],
+      details: ['info@dreamspaceinteriors.co'],
       action: 'Send Email',
       href: 'mailto:info@dreamspaceinteriors.co'
     },
     {
       icon: MapPin,
       title: 'Address',
-      details: ['123 Design Street', 'New York, NY 10001', 'United States'],
+      details: ['Primark DeStature, F block 702', 'Bachupally', 'Hyderabad, Telangana'],
       action: 'Get Directions',
-      href: 'https://maps.google.com/?q=123+Design+Street+New+York+NY+10001'
+      href: 'https://maps.google.com/?q=Primark+DeStature+F+block+702+Bachupally+Hyderabad'
     },
     {
       icon: Clock,
@@ -206,7 +206,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-200"
-                      placeholder="+91 9876543210"
+                      placeholder="+91 8985456887"
                     />
                   </div>
                   
