@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "deploy": "gh-pages -d out",
+    "predeploy": "npm run build && npm run export"
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",
@@ -34,6 +36,7 @@
     "@types/react-dom": "^18.2.0",
     "eslint": "^8.0.0",
     "eslint-config-next": "^14.0.0",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.0.0"
   }
 }
