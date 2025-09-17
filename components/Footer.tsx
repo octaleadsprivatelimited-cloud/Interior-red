@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, Youtube, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
@@ -38,7 +39,15 @@ const Footer = () => {
     <footer className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
       <div className="container-custom section-padding">
         <div className="text-center mb-10">
-                  <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent">Dream Space Interiors</h3>
+          <Link href="/" className="inline-block">
+            <Image
+              src="/images/logo.png"
+              alt="Dream Space Interiors"
+              width={120}
+              height={120}
+              className="mx-auto mb-4"
+            />
+          </Link>
           <p className="text-neutral-300">Transform Your Space</p>
         </div>
 
