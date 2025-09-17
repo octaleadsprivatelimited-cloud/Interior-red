@@ -98,7 +98,7 @@ const Stats = () => {
   };
 
   return (
-    <section id="stats-section" className="section-padding bg-gradient-to-br from-accent to-brown-600 text-white">
+    <section id="stats-section" className="section-padding bg-gradient-to-br from-primary-600 to-primary-700 text-white">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">

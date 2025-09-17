@@ -1,24 +1,8 @@
 import Link from 'next/link';
-import { ArrowRight, Phone, Mail, MessageCircle, Calendar, Star, Clock } from 'lucide-react';
+import { ArrowRight, MessageCircle, Calendar, Star } from 'lucide-react';
 
 const CTA = () => {
   const contactMethods = [
-    {
-      icon: Phone,
-      title: 'Call Us',
-      description: 'Speak directly with our design team',
-      contact: '+1 (555) 123-4567',
-      action: 'Call Now',
-      href: 'tel:+15551234567'
-    },
-    {
-      icon: Mail,
-      title: 'Email Us',
-      description: 'Send us your project details',
-      contact: 'info@eliteinteriordesign.com',
-      action: 'Send Email',
-      href: 'mailto:info@eliteinteriordesign.com'
-    },
     {
       icon: MessageCircle,
       title: 'WhatsApp',
@@ -47,7 +31,7 @@ const CTA = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-900 via-accent to-brown-600 text-white relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-gray-900 via-primary-600 to-primary-700 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-48 -translate-y-48"></div>
@@ -156,31 +140,7 @@ const CTA = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="mt-16 text-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              Limited Time Offer
-            </h3>
-            <p className="text-white/90 mb-6 text-lg">
-              Book your free consultation this month and get 10% off your first project. 
-              Don't miss this opportunity to transform your space at a special price.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 px-8 py-4 rounded-lg font-bold transition-colors duration-200 inline-flex items-center justify-center group text-lg"
-              >
-                Claim Your Discount
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-              <div className="text-white/80 text-sm flex items-center justify-center">
-                <Clock className="w-4 h-4 mr-2" />
-                Offer expires in 7 days
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Bottom Section removed */}
       </div>
     </section>
   );

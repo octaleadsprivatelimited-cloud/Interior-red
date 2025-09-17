@@ -128,7 +128,7 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-accent to-brown-600 rounded-2xl p-8 lg:p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 lg:p-12 text-center text-white">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">
               Ready to Transform Your Space?

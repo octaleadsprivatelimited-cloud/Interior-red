@@ -230,7 +230,7 @@ const SpacePlanning = () => {
             
             <div className="relative">
               <Image
-                src="/images/space-process.jpg"
+                src="https://placehold.co/800x900?text=Space+Planning+Process"
                 alt="Space planning process"
                 width={600}
                 height={700}

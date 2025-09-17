@@ -96,7 +96,7 @@ const PopupModal = () => {
 
             {/* Header */}
             <motion.div 
-              className="bg-gradient-to-r from-accent to-brown-600 p-6 text-white text-center"
+              className="bg-gradient-to-r from-primary-600 to-primary-700 p-6 text-white text-center"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.3 }}
@@ -170,7 +170,7 @@ const PopupModal = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-accent to-brown-600 text-white py-3 px-6 rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white py-3 px-6 rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   >
                     {isSubmitting ? (
                       <div className="flex items-center justify-center">

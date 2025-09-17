@@ -25,7 +25,7 @@ const Reviews = () => {
       rating: 5,
       date: '2024-01-15',
       category: 'residential',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=Sarah+Johnson',
       content: 'Elite Interior Design transformed our outdated home into a stunning modern space. Their attention to detail and creative solutions exceeded our expectations. The team was professional, punctual, and truly listened to our needs. We couldn\'t be happier with the results!',
       verified: true,
       helpful: 12
@@ -39,7 +39,7 @@ const Reviews = () => {
       rating: 5,
       date: '2024-01-10',
       category: 'commercial',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=Michael+Chen',
       content: 'We needed a modern office space that would inspire our team and impress clients. Elite Interior Design delivered beyond our wildest dreams. The space is not only beautiful but also highly functional for our growing team. Highly recommend!',
       verified: true,
       helpful: 8
@@ -53,7 +53,7 @@ const Reviews = () => {
       rating: 5,
       date: '2024-01-05',
       category: 'commercial',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=Emily+Rodriguez',
       content: 'The restaurant design they created for us is absolutely perfect. It captures the essence of our brand while providing an amazing dining experience for our customers. Our business has grown significantly since the renovation.',
       verified: true,
       helpful: 15
@@ -67,7 +67,7 @@ const Reviews = () => {
       rating: 5,
       date: '2023-12-28',
       category: 'luxury',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=David+Kim',
       content: 'Working with Elite Interior Design on our luxury condominium project was a game-changer. Their expertise in high-end residential design helped us achieve record sales. The attention to detail and quality of work is unmatched.',
       verified: true,
       helpful: 20
@@ -95,7 +95,7 @@ const Reviews = () => {
       rating: 5,
       date: '2023-12-15',
       category: 'luxury',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=Jennifer+Martinez',
       content: 'The team at Elite Interior Design created a masterpiece in our home. Every detail was carefully considered, from the color palette to the furniture selection. The project was completed on time and within budget. Absolutely stunning work!',
       verified: true,
       helpful: 18

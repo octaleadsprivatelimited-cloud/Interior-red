@@ -15,7 +15,7 @@ const Testimonials = () => {
       location: 'New York, NY',
       rating: 5,
       content: 'Elite Interior Design transformed our outdated home into a stunning modern space. Their attention to detail and creative solutions exceeded our expectations. The team was professional, punctual, and truly listened to our needs.',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=Sarah+Johnson',
       project: 'Complete Home Renovation'
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       location: 'San Francisco, CA',
       rating: 5,
       content: 'We needed a modern office space that would inspire our team and impress clients. Elite Interior Design delivered beyond our wildest dreams. The space is not only beautiful but also highly functional for our growing team.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=Michael+Chen',
       project: 'Corporate Office Design'
     },
     {
@@ -35,7 +35,7 @@ const Testimonials = () => {
       location: 'Los Angeles, CA',
       rating: 5,
       content: 'The restaurant design they created for us is absolutely perfect. It captures the essence of our brand while providing an amazing dining experience for our customers. Our business has grown significantly since the renovation.',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=Emily+Rodriguez',
       project: 'Restaurant Interior Design'
     },
     {
@@ -45,7 +45,7 @@ const Testimonials = () => {
       location: 'Miami, FL',
       rating: 5,
       content: 'Working with Elite Interior Design on our luxury condominium project was a game-changer. Their expertise in high-end residential design helped us achieve record sales. Highly recommend their services.',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+      image: 'https://placehold.co/400x400?text=David+Kim',
       project: 'Luxury Condominium Design'
     },
     {
@@ -55,7 +55,7 @@ const Testimonials = () => {
       location: 'Chicago, IL',
       rating: 5,
       content: 'As a fellow designer, I can attest to the exceptional quality of work from Elite Interior Design. Their innovative approach and flawless execution make them stand out in the industry. Truly professional.',
-      image: '/images/testimonial-5.jpg',
+      image: 'https://placehold.co/400x400?text=Lisa+Thompson',
       project: 'Collaborative Design Project'
     }
   ];
@@ -98,7 +98,7 @@ const Testimonials = () => {
 
         {/* Testimonial Carousel */}
         <div className="relative max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-accent to-brown-600 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>

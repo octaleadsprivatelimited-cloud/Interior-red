@@ -1,9 +1,11 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://eliteinteriordesign.com';
-  
-  return [
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+
+  const urls: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -102,17 +104,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
-    {
-      url: `${baseUrl}/cookie-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/refund-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
   ];
+
+  // Only include URLs that actually exist in the app
+  const existingPaths = new Set([
+    '/',
+    '/about',
+    '/services',
+    '/portfolio',
+    '/gallery',
+    '/reviews',
+    '/blog',
+    '/contact',
+    '/residential-design',
+    '/commercial-design',
+    '/space-planning',
+    '/color-consultation',
+    '/furniture-selection',
+    '/renovation-services',
+    '/privacy-policy',
+    '/terms-of-service',
+  ]);
+
+  const filtered = urls.filter((entry) => {
+    try {
+      const path = new URL(entry.url).pathname;
+      return existingPaths.has(path);
+    } catch {
+      return true;
+    }
+  });
+
+  return filtered;
 }

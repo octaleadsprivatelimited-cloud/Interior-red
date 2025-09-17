@@ -5,8 +5,7 @@ import Portfolio from '@/components/sections/Portfolio';
 import Testimonials from '@/components/sections/Testimonials';
 import Process from '@/components/sections/Process';
 import CTA from '@/components/sections/CTA';
-import Stats from '@/components/sections/Stats';
-import BlogPreview from '@/components/sections/BlogPreview';
+// import Stats from '@/components/sections/Stats';
 import PopupModal from '@/components/PopupModal';
 
 export default function Home() {
@@ -17,9 +16,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Process />
-      <Stats />
       <Testimonials />
-      <BlogPreview />
       <CTA />
       <PopupModal />
     </>

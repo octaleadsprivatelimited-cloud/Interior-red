@@ -7,6 +7,10 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+
 export const metadata: Metadata = {
   title: {
     default: 'Elite Interior Design - Transform Your Space with Style',
@@ -131,20 +135,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://eliteinteriordesign.com'),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://eliteinteriordesign.com',
+    url: siteUrl,
     title: 'Elite Interior Design - Transform Your Space with Style',
     description: 'Professional interior design services for residential and commercial spaces. Expert designers creating stunning, functional interiors.',
     siteName: 'Elite Interior Design',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: 'https://placehold.co/1200x630?text=Elite+Interior+Design',
         width: 1200,
         height: 630,
         alt: 'Elite Interior Design - Professional Interior Design Services',
@@ -155,7 +159,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Elite Interior Design - Transform Your Space with Style',
     description: 'Professional interior design services for residential and commercial spaces.',
-    images: ['/images/og-image.jpg'],
+    images: ['https://placehold.co/1200x630?text=Elite+Interior+Design'],
   },
   robots: {
     index: true,
@@ -184,6 +188,49 @@ export default function RootLayout({
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
         <meta name="theme-color" content="#402530" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* JSON-LD structured data for Organization and Website */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Elite Interior Design',
+              url: siteUrl,
+              logo: 'https://placehold.co/512x512?text=EID',
+              sameAs: [],
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'New York',
+                addressRegion: 'NY',
+                addressCountry: 'US',
+              },
+              contactPoint: [{
+                '@type': 'ContactPoint',
+                contactType: 'customer service',
+                telephone: '+1-555-123-4567',
+                areaServed: 'US',
+                availableLanguage: ['English'],
+              }],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              url: siteUrl,
+              name: 'Elite Interior Design',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: `${siteUrl}/search?q={search_term_string}`,
+                'query-input': 'required name=search_term_string',
+              },
+            }),
+          }}
+        />
       </head>
       <body className={inter.className}>
         <Header />

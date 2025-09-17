@@ -23,7 +23,7 @@ const Services = () => {
         'Lighting design and installation',
         'Custom storage solutions'
       ],
-      image: '/images/service-residential.jpg',
+      image: 'https://placehold.co/1200x800?text=Residential+Design',
       link: '/residential-design',
       price: 'Starting at $5,000',
       duration: '4-8 weeks'
@@ -40,7 +40,7 @@ const Services = () => {
         'Brand integration',
         'Workplace wellness design'
       ],
-      image: '/images/service-commercial.jpg',
+      image: 'https://placehold.co/1200x800?text=Commercial+Design',
       link: '/commercial-design',
       price: 'Starting at $10,000',
       duration: '6-12 weeks'
@@ -57,7 +57,7 @@ const Services = () => {
         'Color scheme implementation',
         'Accent color coordination'
       ],
-      image: '/images/service-color.jpg',
+      image: 'https://placehold.co/1200x800?text=Color+Consultation',
       link: '/color-consultation',
       price: 'Starting at $500',
       duration: '1-2 weeks'
@@ -74,7 +74,7 @@ const Services = () => {
         'Multi-purpose area planning',
         'Accessibility considerations'
       ],
-      image: '/images/service-space.jpg',
+      image: 'https://placehold.co/1200x800?text=Space+Planning',
       link: '/space-planning',
       price: 'Starting at $1,500',
       duration: '2-4 weeks'
@@ -91,7 +91,7 @@ const Services = () => {
         'Maintenance planning',
         'Warranty management'
       ],
-      image: '/images/service-furniture.jpg',
+      image: 'https://placehold.co/1200x800?text=Furniture+Selection',
       link: '/furniture-selection',
       price: 'Starting at $2,000',
       duration: '3-6 weeks'
@@ -108,7 +108,7 @@ const Services = () => {
         'Permit and compliance handling',
         'Post-renovation support'
       ],
-      image: '/images/service-renovation.jpg',
+      image: 'https://placehold.co/1200x800?text=Renovation+Services',
       link: '/renovation-services',
       price: 'Starting at $15,000',
       duration: '8-16 weeks'
@@ -345,7 +345,7 @@ const Services = () => {
             
             <div className="relative">
               <Image
-                src="/images/why-choose-us.jpg"
+                src="https://placehold.co/800x900?text=Why+Choose+Us"
                 alt="Why choose us"
                 width={600}
                 height={700}

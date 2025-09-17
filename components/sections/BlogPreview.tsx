@@ -8,7 +8,7 @@ const BlogPreview = () => {
       id: 1,
       title: '10 Modern Interior Design Trends for 2024',
       excerpt: 'Discover the latest interior design trends that will transform your space this year, from sustainable materials to bold color choices.',
-      image: '/images/blog-1.jpg',
+      image: 'https://placehold.co/800x500?text=Modern+Design+Trends',
       author: 'Sarah Johnson',
       date: '2024-01-15',
       readTime: '5 min read',
@@ -19,7 +19,7 @@ const BlogPreview = () => {
       id: 2,
       title: 'How to Choose the Perfect Color Palette for Your Home',
       excerpt: 'Learn the psychology of colors and how to create harmonious color schemes that reflect your personality and enhance your living space.',
-      image: '/images/blog-2.jpg',
+      image: 'https://placehold.co/800x500?text=Color+Palette+Guide',
       author: 'Michael Chen',
       date: '2024-01-10',
       readTime: '7 min read',
@@ -30,7 +30,7 @@ const BlogPreview = () => {
       id: 3,
       title: 'Small Space Design: Maximizing Functionality',
       excerpt: 'Expert tips and tricks for making the most of small spaces, from clever storage solutions to optical illusions that create more room.',
-      image: '/images/blog-3.jpg',
+      image: 'https://placehold.co/800x500?text=Small+Space+Design',
       author: 'Emily Rodriguez',
       date: '2024-01-05',
       readTime: '6 min read',
@@ -143,7 +143,7 @@ const BlogPreview = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="bg-gradient-to-r from-accent to-brown-600 rounded-2xl p-8 lg:p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 lg:p-12 text-center text-white">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">
               Stay Updated with Design Trends

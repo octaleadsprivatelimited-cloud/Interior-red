@@ -53,7 +53,7 @@ const Process = () => {
   ];
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="section-padding bg-gray-50 hidden md:block">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
@@ -115,7 +115,7 @@ const Process = () => {
                 {/* Visual Element */}
                 <div className="flex-1">
                   <div className="relative">
-                    <div className="w-full h-64 bg-gradient-to-br from-accent to-brown-600 rounded-2xl flex items-center justify-center">
+                    <div className="w-full h-64 bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl flex items-center justify-center">
                       <div className="text-center text-white">
                         <Icon className="w-16 h-16 mx-auto mb-4 opacity-80" />
                         <h4 className="text-xl font-semibold">Step {step.number}</h4>
