@@ -43,8 +43,8 @@ const Footer = () => {
             <Image
               src="/images/logo.png"
               alt="Dream Space Interiors"
-              width={120}
-              height={120}
+              width={150}
+              height={150}
               className="mx-auto mb-4"
             />
           </Link>
