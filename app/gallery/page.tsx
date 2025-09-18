@@ -9,145 +9,112 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const categories = [
-    { id: 'all', name: 'All Projects', count: 48 },
-    { id: 'residential', name: 'Residential', count: 24 },
-    { id: 'commercial', name: 'Commercial', count: 12 },
-    { id: 'luxury', name: 'Luxury', count: 8 },
-    { id: 'modern', name: 'Modern', count: 4 }
+    { id: 'all', name: 'All Projects', count: 9 },
+    { id: 'residential', name: 'Residential', count: 3 },
+    { id: 'commercial', name: 'Commercial', count: 4 },
+    { id: 'luxury', name: 'Luxury', count: 2 },
+    { id: 'modern', name: 'Modern', count: 1 }
   ];
 
   const galleryImages = [
     {
       id: 1,
-      title: 'Modern Living Room',
+      title: 'Gallery Image 1',
       category: 'residential',
       type: 'Living Room',
       location: 'New York, NY',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      description: 'A stunning modern living room with clean lines and natural materials.',
-      tags: ['Modern', 'Minimalist', 'Natural Light']
+      image: '/images/Gallery-1.jpg',
+      description: 'Beautiful interior design showcasing modern aesthetics.',
+      tags: ['Modern', 'Elegant', 'Stylish']
     },
     {
       id: 2,
-      title: 'Luxury Master Bedroom',
+      title: 'Gallery Image 2',
       category: 'luxury',
       type: 'Bedroom',
       location: 'Beverly Hills, CA',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      description: 'Elegant master bedroom with custom furniture and premium finishes.',
-      tags: ['Luxury', 'Custom', 'Elegant']
+      image: '/images/Gallery-2.jpg',
+      description: 'Luxurious bedroom design with premium finishes.',
+      tags: ['Luxury', 'Premium', 'Elegant']
     },
     {
       id: 3,
-      title: 'Corporate Office Space',
+      title: 'Gallery Image 3',
       category: 'commercial',
       type: 'Office',
       location: 'San Francisco, CA',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      description: 'Innovative office design promoting collaboration and productivity.',
-      tags: ['Commercial', 'Modern', 'Collaborative']
+      image: '/images/Gallery-3.jpg',
+      description: 'Professional office space with modern design elements.',
+      tags: ['Commercial', 'Modern', 'Professional']
     },
     {
       id: 4,
-      title: 'Contemporary Kitchen',
+      title: 'Gallery Image 4',
       category: 'residential',
       type: 'Kitchen',
       location: 'Los Angeles, CA',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      description: 'Sleek kitchen design with premium appliances and custom cabinetry.',
-      tags: ['Kitchen', 'Contemporary', 'Premium']
+      image: '/images/Gallery-4.JPG',
+      description: 'Contemporary kitchen with sleek design and functionality.',
+      tags: ['Kitchen', 'Contemporary', 'Functional']
     },
     {
       id: 5,
-      title: 'Boutique Hotel Lobby',
+      title: 'Gallery Image 5',
       category: 'commercial',
       type: 'Hospitality',
       location: 'Miami, FL',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      description: 'Sophisticated hotel lobby creating a memorable first impression.',
-      tags: ['Hospitality', 'Luxury', 'Sophisticated']
+      image: '/images/Gallery-5.JPG',
+      description: 'Sophisticated hospitality space with elegant design.',
+      tags: ['Hospitality', 'Elegant', 'Sophisticated']
     },
     {
       id: 6,
-      title: 'Minimalist Dining Room',
+      title: 'Gallery Image 6',
       category: 'modern',
       type: 'Dining Room',
       location: 'Seattle, WA',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      description: 'Clean, minimalist dining space with focus on functionality.',
-      tags: ['Minimalist', 'Clean', 'Functional']
+      image: '/images/Gallery-6.JPG',
+      description: 'Minimalist dining space with clean, modern aesthetics.',
+      tags: ['Minimalist', 'Clean', 'Modern']
     },
     {
       id: 7,
-      title: 'Luxury Penthouse',
+      title: 'Gallery Image 7',
       category: 'luxury',
       type: 'Penthouse',
       location: 'Manhattan, NY',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      description: 'Stunning penthouse with panoramic city views and premium finishes.',
+      image: '/images/Gallery-7.JPG',
+      description: 'Luxurious penthouse with stunning city views.',
       tags: ['Penthouse', 'Luxury', 'City Views']
     },
     {
       id: 8,
-      title: 'Modern Bathroom',
+      title: 'Gallery Image 8',
       category: 'residential',
       type: 'Bathroom',
       location: 'Chicago, IL',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      description: 'Spa-like bathroom with modern fixtures and natural stone.',
-      tags: ['Bathroom', 'Spa-like', 'Natural Stone']
+      image: '/images/Gallery-8.jpg',
+      description: 'Modern bathroom with spa-like features and premium fixtures.',
+      tags: ['Bathroom', 'Spa-like', 'Modern']
     },
     {
       id: 9,
-      title: 'Co-working Space',
+      title: 'Gallery Image 9',
       category: 'commercial',
       type: 'Co-working',
       location: 'Austin, TX',
       year: '2023',
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      description: 'Flexible co-working space designed for modern professionals.',
-      tags: ['Co-working', 'Flexible', 'Modern']
-    },
-    {
-      id: 10,
-      title: 'Family Room',
-      category: 'residential',
-      type: 'Family Room',
-      location: 'Denver, CO',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      description: 'Comfortable family room perfect for relaxation and entertainment.',
-      tags: ['Family', 'Comfortable', 'Entertainment']
-    },
-    {
-      id: 11,
-      title: 'Restaurant Interior',
-      category: 'commercial',
-      type: 'Restaurant',
-      location: 'Portland, OR',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      description: 'Trendy restaurant design with industrial and modern elements.',
-      tags: ['Restaurant', 'Industrial', 'Trendy']
-    },
-    {
-      id: 12,
-      title: 'Luxury Study',
-      category: 'luxury',
-      type: 'Study',
-      location: 'Boston, MA',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      description: 'Elegant home office with custom built-ins and premium materials.',
-      tags: ['Study', 'Custom', 'Elegant']
+      image: '/images/Gallery-9.jpg',
+      description: 'Flexible co-working space designed for productivity and collaboration.',
+      tags: ['Co-working', 'Productive', 'Collaborative']
     }
   ];
 
@@ -268,32 +235,6 @@ const Gallery = () => {
                   </div>
                 </div>
                 
-                <div className="p-4">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-accent transition-colors duration-200">
-                    {image.title}
-                  </h3>
-                  
-                  <div className="flex items-center justify-between text-sm text-gray-500 mb-3">
-                    <span>📍 {image.location}</span>
-                    <span>{image.year}</span>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-1">
-                    {image.tags.slice(0, 2).map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                    {image.tags.length > 2 && (
-                      <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
-                        +{image.tags.length - 2}
-                      </span>
-                    )}
-                  </div>
-                </div>
               </div>
             ))}
           </div>
@@ -340,29 +281,6 @@ const Gallery = () => {
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
               />
               
-              {/* Image Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  {filteredImages[selectedImage].title}
-                </h3>
-                <p className="text-white/90 mb-2">
-                  {filteredImages[selectedImage].description}
-                </p>
-                <div className="flex items-center justify-between text-sm text-white/80">
-                  <span>📍 {filteredImages[selectedImage].location}</span>
-                  <span>{filteredImages[selectedImage].year}</span>
-                </div>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {filteredImages[selectedImage].tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 bg-white/20 text-white text-sm rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>

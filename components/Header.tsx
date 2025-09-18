@@ -83,7 +83,7 @@ const Header = () => {
                   <img
                     src="/images/logo.png"
                     alt="Dream Space Interiors"
-                    className="h-12 sm:h-16 lg:h-[72px] w-auto"
+                    className="h-[65px] sm:h-[86px] lg:h-[97px] w-auto"
                   />
                 </Link>
               </div>
