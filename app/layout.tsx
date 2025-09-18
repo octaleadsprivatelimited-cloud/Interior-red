@@ -184,7 +184,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192x192.png" />
+        <link rel="apple-touch-icon" sizes="512x512" href="/favicon-512x512.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="theme-color" content="#402530" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* JSON-LD structured data for Organization and Website */}
@@ -196,8 +200,11 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'Dream Space Interiors',
               url: siteUrl,
-              logo: 'https://placehold.co/512x512?text=EID',
-              sameAs: [],
+              logo: `${siteUrl}/images/logo.png`,
+              sameAs: [
+                'https://www.instagram.com/dreamspaceinteriorsdecors',
+                'https://www.youtube.com/@DreamSpace_Interiors'
+              ],
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Hyderabad',

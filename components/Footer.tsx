@@ -46,7 +46,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-            { name: 'Instagram', href: 'https://www.instagram.com/dreamspaceinteriorsdecors', icon: Instagram },
+    { name: 'Instagram', href: 'https://www.instagram.com/dreamspaceinteriorsdecors', icon: Instagram },
+    { name: 'YouTube', href: 'https://www.youtube.com/@DreamSpace_Interiors', icon: Youtube },
   ];
 
   return (

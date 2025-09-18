@@ -24,6 +24,7 @@ import {
   Play,
   Quote
 } from 'lucide-react';
+import PricingSlider from './sections/PricingSlider';
 
 const LandingPage = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -80,10 +81,10 @@ const LandingPage = () => {
   ];
 
   const stats = [
-    { number: '500+', label: 'Happy Customers' },
-    { number: '1000+', label: 'Projects Completed' },
-    { number: '5+', label: 'Years Experience' },
-    { number: '98%', label: 'Customer Satisfaction' }
+    { number: '60+', label: 'Happy Customers' },
+    { number: '100+', label: 'Projects Completed' },
+    { number: '2022', label: 'Founded' },
+    { number: '99%', label: 'Customer Satisfaction' }
   ];
 
   const processSteps = [
@@ -405,8 +406,11 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Pricing & Gallery Section */}
+      <PricingSlider />
+
       {/* CTA Section */}
-      <section className="py-20 bg-accent">
+      <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="container-custom">
           <div className="text-center text-white">
             <h2 className="text-4xl font-bold mb-4">
@@ -420,7 +424,7 @@ const LandingPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-white text-accent hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center group"
+                className="bg-accent text-white hover:bg-accent/90 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center group"
               >
                 Get Free Consultation
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -428,13 +432,13 @@ const LandingPage = () => {
               
               <Link
                 href="/gallery"
-                className="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center"
+                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center"
               >
                 View Our Work
               </Link>
             </div>
             
-            <div className="flex items-center justify-center mt-8 text-white/80">
+            <div className="flex items-center justify-center mt-8 text-white/90">
               <Phone className="w-5 h-5 mr-2" />
               <span>Call us: +91-8985456887</span>
             </div>

@@ -2,24 +2,14 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { X, ChevronLeft, ChevronRight, Filter, Eye, ExternalLink } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Eye, ExternalLink } from 'lucide-react';
 
 const Gallery = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-
-  const categories = [
-    { id: 'all', name: 'All Projects', count: 9 },
-    { id: 'residential', name: 'Residential', count: 3 },
-    { id: 'commercial', name: 'Commercial', count: 4 },
-    { id: 'luxury', name: 'Luxury', count: 2 },
-    { id: 'modern', name: 'Modern', count: 1 }
-  ];
 
   const galleryImages = [
     {
       id: 1,
-      title: 'Gallery Image 1',
       category: 'residential',
       type: 'Living Room',
       location: 'New York, NY',
@@ -30,7 +20,6 @@ const Gallery = () => {
     },
     {
       id: 2,
-      title: 'Gallery Image 2',
       category: 'luxury',
       type: 'Bedroom',
       location: 'Beverly Hills, CA',
@@ -41,7 +30,6 @@ const Gallery = () => {
     },
     {
       id: 3,
-      title: 'Gallery Image 3',
       category: 'commercial',
       type: 'Office',
       location: 'San Francisco, CA',
@@ -52,7 +40,6 @@ const Gallery = () => {
     },
     {
       id: 4,
-      title: 'Gallery Image 4',
       category: 'residential',
       type: 'Kitchen',
       location: 'Los Angeles, CA',
@@ -63,7 +50,6 @@ const Gallery = () => {
     },
     {
       id: 5,
-      title: 'Gallery Image 5',
       category: 'commercial',
       type: 'Hospitality',
       location: 'Miami, FL',
@@ -74,7 +60,6 @@ const Gallery = () => {
     },
     {
       id: 6,
-      title: 'Gallery Image 6',
       category: 'modern',
       type: 'Dining Room',
       location: 'Seattle, WA',
@@ -85,7 +70,6 @@ const Gallery = () => {
     },
     {
       id: 7,
-      title: 'Gallery Image 7',
       category: 'luxury',
       type: 'Penthouse',
       location: 'Manhattan, NY',
@@ -96,7 +80,6 @@ const Gallery = () => {
     },
     {
       id: 8,
-      title: 'Gallery Image 8',
       category: 'residential',
       type: 'Bathroom',
       location: 'Chicago, IL',
@@ -107,7 +90,6 @@ const Gallery = () => {
     },
     {
       id: 9,
-      title: 'Gallery Image 9',
       category: 'commercial',
       type: 'Co-working',
       location: 'Austin, TX',
@@ -118,9 +100,7 @@ const Gallery = () => {
     }
   ];
 
-  const filteredImages = selectedCategory === 'all' 
-    ? galleryImages 
-    : galleryImages.filter(image => image.category === selectedCategory);
+  const filteredImages = galleryImages;
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -180,23 +160,6 @@ const Gallery = () => {
             </p>
           </div>
 
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  selectedCategory === category.id
-                    ? 'bg-accent text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-600 hover:bg-accent hover:text-white shadow-md'
-                }`}
-              >
-                <Filter className="w-4 h-4 mr-2 inline" />
-                {category.name} ({category.count})
-              </button>
-            ))}
-          </div>
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -209,7 +172,7 @@ const Gallery = () => {
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src={image.image}
-                    alt={image.title}
+                    alt={`${image.type} interior design`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -227,12 +190,6 @@ const Gallery = () => {
                     </div>
                   </div>
 
-                  {/* Category Badge */}
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-accent text-white text-xs font-medium rounded-full">
-                      {image.type}
-                    </span>
-                  </div>
                 </div>
                 
               </div>
@@ -275,7 +232,7 @@ const Gallery = () => {
             <div className="relative">
               <Image
                 src={filteredImages[selectedImage].image}
-                alt={filteredImages[selectedImage].title}
+                alt={`${filteredImages[selectedImage].type} interior design`}
                 width={1200}
                 height={800}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
