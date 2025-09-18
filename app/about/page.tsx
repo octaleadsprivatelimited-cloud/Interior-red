@@ -158,7 +158,7 @@ const About = () => {
 
 
       {/* Testimonial */}
-      <section className="section-padding bg-gradient-to-br from-accent to-brown-600 text-white">
+      <section className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="w-16 h-16 mx-auto mb-8 opacity-80" />
@@ -169,7 +169,7 @@ const About = () => {
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <Image
-                src="/images/testimonial-client.jpg"
+                src="/images/Gallery-5.JPG"
                 alt="Client testimonial"
                 width={60}
                 height={60}

@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dreamspaceinteriors.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all major pages
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /portfolio
+Allow: /gallery
+Allow: /contact
+Allow: /blog
+Allow: /landing
+Allow: /residential-design
+Allow: /commercial-design
+Allow: /space-planning
+Allow: /color-consultation
+Allow: /furniture-selection
+Allow: /renovation-services
+
+# Allow static assets
+Allow: /images/
+Allow: /favicon.ico
+Allow: /_next/static/
+
+# Crawl delay (optional - helps prevent overloading server)
+Crawl-delay: 1

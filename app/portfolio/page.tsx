@@ -212,9 +212,9 @@ const Portfolio = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-br from-accent to-brown-600 text-white">
+      <section className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 text-white">
             Ready to Start Your Project?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">

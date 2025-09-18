@@ -218,7 +218,7 @@ const CommercialDesign = () => {
             
             <div className="relative">
               <Image
-                src="/images/commercial-process.jpg"
+                src="/images/Gallery-3.jpg"
                 alt="Commercial design process"
                 width={600}
                 height={700}
@@ -230,9 +230,9 @@ const CommercialDesign = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-br from-accent to-brown-600 text-white">
+      <section className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 text-white">
             Ready to Transform Your Business Space?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -242,7 +242,7 @@ const CommercialDesign = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-white text-accent hover:bg-gray-100 px-8 py-4 rounded-lg font-medium transition-colors duration-200 inline-flex items-center justify-center group text-lg"
+              className="bg-accent text-white hover:bg-accent/90 px-8 py-4 rounded-lg font-medium transition-colors duration-200 inline-flex items-center justify-center group text-lg"
             >
               Get Free Consultation
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -250,7 +250,7 @@ const CommercialDesign = () => {
             
             <Link
               href="/portfolio"
-              className="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-4 rounded-lg font-medium transition-colors duration-200 inline-flex items-center justify-center text-lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-medium transition-colors duration-200 inline-flex items-center justify-center text-lg"
             >
               View Our Work
             </Link>
