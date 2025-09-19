@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { ArrowRight, Home, Building, Palette, Ruler, Sofa, Wrench, Lightbulb, CheckCircle, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Our Services - Dream Space Interiors',
-  description: 'Comprehensive interior design services including residential design, commercial design, space planning, color consultation, and more.',
-  keywords: ['interior design services', 'residential design', 'commercial design', 'space planning', 'color consultation'],
+  title: 'Interior Design Services in Hyderabad | Dream Space Interiors',
+  description: 'Comprehensive interior design services in Hyderabad, Telangana. Residential design, commercial design, space planning, color consultation, and more by expert designers.',
+  keywords: ['interior design services', 'residential design', 'commercial design', 'space planning', 'color consultation', 'interior design services Hyderabad', 'residential design Hyderabad', 'commercial design Telangana', 'interior design company Hyderabad'],
 };
 
 const Services = () => {

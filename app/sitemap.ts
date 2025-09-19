@@ -91,6 +91,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/interior-design-hyderabad`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
     // Legal pages
     {
       url: `${baseUrl}/privacy-policy`,
@@ -122,6 +128,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/color-consultation',
     '/furniture-selection',
     '/renovation-services',
+    '/interior-design-hyderabad',
     '/privacy-policy',
     '/terms-of-service',
   ]);

@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { ArrowRight, Award, Users, Target, CheckCircle, Star, Quote } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About Us - Dream Space Interiors',
-  description: 'Learn about Dream Space Interiors, our mission, values, and the expert team behind our award-winning interior design services.',
-  keywords: ['about us', 'interior design team', 'design company', 'our story', 'mission', 'values'],
+  title: 'About Us - Dream Space Interiors | Interior Designers in Hyderabad',
+  description: 'Learn about Dream Space Interiors, Hyderabad\'s premier interior design company. Our mission, values, and expert team behind award-winning interior design services in Telangana.',
+  keywords: ['about us', 'interior design team', 'design company', 'our story', 'mission', 'values', 'interior designers Hyderabad', 'interior design company Hyderabad', 'best interior designers Telangana'],
 };
 
 const About = () => {

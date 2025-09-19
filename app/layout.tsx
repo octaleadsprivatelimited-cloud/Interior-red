@@ -15,7 +15,7 @@ export const metadata: Metadata = {
           default: 'Dream Space Interiors - Transform Your Space with Style',
           template: '%s | Dream Space Interiors'
         },
-        description: 'Professional interior design services for residential and commercial spaces. Expert designers creating stunning, functional interiors that reflect your unique style and vision.',
+        description: 'Professional interior design services in Hyderabad, Telangana. Expert designers creating stunning, functional interiors for residential and commercial spaces that reflect your unique style and vision.',
   keywords: [
     'interior design',
     'interior designer',
@@ -27,6 +27,16 @@ export const metadata: Metadata = {
     'contemporary interior design',
     'home decor',
     'interior decoration',
+    'interior design Hyderabad',
+    'interior designer Hyderabad',
+    'home interior design Hyderabad',
+    'interior design Telangana',
+    'interior designer Telangana',
+    'interior design India',
+    'Hyderabad interior design services',
+    'Telangana interior design',
+    'interior design companies Hyderabad',
+    'best interior designer Hyderabad',
     'space planning',
     'interior architecture',
     'furniture selection',
@@ -172,7 +182,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'google-site-verification=your-actual-verification-code-here',
   },
 };
 
@@ -191,6 +201,25 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="theme-color" content="#402530" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Google Analytics 4 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GA_MEASUREMENT_ID', {
+                page_title: document.title,
+                page_location: window.location.href,
+              });
+            `,
+          }}
+        />
         {/* JSON-LD structured data for Organization and Website */}
         <script
           type="application/ld+json"
