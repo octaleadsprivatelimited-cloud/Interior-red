@@ -1,20 +1,10 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Eye, ExternalLink, Filter } from 'lucide-react';
+import { ArrowRight, Eye, ExternalLink } from 'lucide-react';
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
-
-  const categories = [
-    { id: 'all', name: 'All Projects' },
-    { id: 'residential', name: 'Residential' },
-    { id: 'commercial', name: 'Commercial' },
-    { id: 'luxury', name: 'Luxury' },
-    { id: 'modern', name: 'Modern' }
-  ];
 
   const projects = [
     {
@@ -79,9 +69,6 @@ const Portfolio = () => {
     }
   ];
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
 
   return (
     <div className="min-h-screen">
@@ -121,27 +108,10 @@ const Portfolio = () => {
             </p>
           </div>
 
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveFilter(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeFilter === category.id
-                    ? 'bg-accent text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-600 hover:bg-accent hover:text-white shadow-md'
-                }`}
-              >
-                <Filter className="w-4 h-4 mr-2 inline" />
-                {category.name}
-              </button>
-            ))}
-          </div>
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project) => (
+            {projects.map((project) => (
               <div
                 key={project.id}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover"

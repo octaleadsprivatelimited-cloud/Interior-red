@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, User, Clock, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Modern Interior Design Trends 2024 - Dream Space Interiors',
+  description: 'Discover the latest modern interior design trends for 2024. From sustainable materials to smart home integration, explore what\'s trending in interior design.',
+  keywords: ['modern interior design trends 2024', 'contemporary design', 'sustainable interior design', 'smart home design', 'minimalist design', 'design trends'],
+};
 
 export default function ModernInteriorDesignTrends2024() {
   return (

@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, User, Clock, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Perfect Color Palette for Your Home - Dream Space Interiors',
+  description: 'Learn how to choose the perfect color palette for your home. Expert tips on color theory, room-by-room color schemes, and creating harmonious interiors.',
+  keywords: ['home color palette', 'color theory', 'interior color schemes', 'room colors', 'paint colors', 'color psychology', 'home decor colors'],
+};
 
 export default function PerfectColorPaletteHome() {
   return (

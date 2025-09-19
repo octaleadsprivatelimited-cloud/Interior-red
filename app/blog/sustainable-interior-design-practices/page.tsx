@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, User, Clock, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sustainable Interior Design Practices - Dream Space Interiors',
+  description: 'Discover sustainable interior design practices for eco-friendly homes. Learn about green materials, energy-efficient design, and environmentally conscious decorating.',
+  keywords: ['sustainable interior design', 'eco-friendly design', 'green interior design', 'sustainable materials', 'energy efficient design', 'environmental design'],
+};
 
 export default function SustainableInteriorDesignPractices() {
   return (

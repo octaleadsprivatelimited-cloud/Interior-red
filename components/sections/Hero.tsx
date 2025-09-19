@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { ArrowRight, Star, Users, Clock, Send } from 'lucide-react';
 
 const Hero = () => {
@@ -51,7 +52,7 @@ const Hero = () => {
       description: 'Professional interior design services that bring your vision to life with stunning, functional spaces that reflect your unique style.',
       image: '/images/slider-1.jpg',
       cta: 'Get Free Consultation',
-      ctaLink: '/contact'
+      ctaLink: 'https://wa.me/918985456887?text=Hi, I\'m interested in your interior design services. Can you help me with a free consultation?'
     },
     {
       id: 2,
@@ -59,8 +60,8 @@ const Hero = () => {
       subtitle: 'Redefined',
       description: '',
       image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=1080&fit=crop',
-      cta: 'View Our Work',
-      ctaLink: '/portfolio'
+      cta: 'Get Free Consultation',
+      ctaLink: 'https://wa.me/918985456887?text=Hi, I\'m interested in your interior design services. Can you help me with a free consultation?'
     },
     {
       id: 3,
@@ -68,8 +69,8 @@ const Hero = () => {
       subtitle: 'Crafted to Perfection',
       description: 'Experience the finest in interior design with our luxury residential and commercial projects that exceed expectations.',
       image: '/images/slider-3.jpg',
-      cta: 'Start Your Project',
-      ctaLink: '/services'
+      cta: 'Get Free Consultation',
+      ctaLink: 'https://wa.me/918985456887?text=Hi, I\'m interested in your interior design services. Can you help me with a free consultation?'
     }
   ];
 
@@ -106,6 +107,34 @@ const Hero = () => {
         ))}
       </div>
 
+      {/* Top Caption - Mobile Only */}
+      <div className="absolute top-20 left-0 right-0 z-20 flex items-start justify-center lg:hidden">
+        <motion.div 
+          className="text-center"
+          initial={{ opacity: 0, y: 50, scale: 0.8 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ 
+            duration: 1.5, 
+            ease: "easeOut",
+            delay: 0.5 
+          }}
+        >
+          <motion.h2 
+            className="text-3xl sm:text-4xl font-bold text-white mb-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ 
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut"
+            }}
+          >
+            Your dream our design
+          </motion.h2>
+        </motion.div>
+      </div>
+
       {/* Content */}
       <div className="relative z-10 h-full flex items-end justify-center pb-16 lg:items-center lg:py-24">
         <div className="container-custom px-4 w-full">
@@ -125,6 +154,8 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mb-12 lg:mb-16">
                 <Link
                   href={currentSlideData.ctaLink}
+                  target={currentSlideData.ctaLink.startsWith('https://wa.me') ? '_blank' : undefined}
+                  rel={currentSlideData.ctaLink.startsWith('https://wa.me') ? 'noopener noreferrer' : undefined}
                   className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 text-base lg:text-lg inline-flex items-center justify-center group"
                 >
                   {currentSlideData.cta}
@@ -156,7 +187,7 @@ const Hero = () => {
                   <div className="flex flex-col items-center mb-1 lg:mb-3">
                     <div className="flex items-center justify-center mb-1 lg:mb-2">
                       <Clock className="w-4 h-4 lg:w-8 lg:h-8 text-accent-400 mr-1 lg:mr-3" />
-                      <span className="text-lg lg:text-4xl font-bold text-white">4+</span>
+                      <span className="text-lg lg:text-4xl font-bold text-white">6+</span>
                     </div>
                     <p className="text-gray-300 text-xs lg:text-base">Years Experience</p>
                   </div>
@@ -166,8 +197,8 @@ const Hero = () => {
 
             {/* Right Column - Contact Form */}
             <div className="hidden lg:block lg:max-w-sm order-2 lg:order-2 lg:justify-self-end lg:mt-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
-                <h3 className="text-lg font-bold text-white mb-3">Get Free Quote</h3>
+              <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-lg">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Get Free Quote</h3>
                 <form onSubmit={handleSubmit} className="space-y-3">
                   <div>
                     <input
@@ -176,7 +207,7 @@ const Hero = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Your Name"
-                      className="w-full px-3 py-2 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-colors duration-200 text-sm"
+                      className="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-colors duration-200 text-sm"
                     />
                   </div>
                   
@@ -188,7 +219,7 @@ const Hero = () => {
                       onChange={handleInputChange}
                       placeholder="Mobile Number *"
                       required
-                      className="w-full px-3 py-2 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-colors duration-200 text-sm"
+                      className="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-colors duration-200 text-sm"
                     />
                   </div>
                   
@@ -199,19 +230,19 @@ const Hero = () => {
                       onChange={handleInputChange}
                       placeholder="Tell us about your project..."
                       rows={2}
-                      className="w-full px-3 py-2 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-colors duration-200 resize-none text-sm"
+                      className="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-colors duration-200 resize-none text-sm"
                     />
                   </div>
 
                   {submitStatus === 'success' && (
-                    <div className="p-2 bg-green-500/20 border border-green-400/30 rounded-lg">
-                      <p className="text-green-200 text-xs">Thank you! We'll contact you soon.</p>
+                    <div className="p-2 bg-green-50 border border-green-200 rounded-lg">
+                      <p className="text-green-800 text-xs">Thank you! We'll contact you soon.</p>
                     </div>
                   )}
 
                   {submitStatus === 'error' && (
-                    <div className="p-2 bg-red-500/20 border border-red-400/30 rounded-lg">
-                      <p className="text-red-200 text-xs">Sorry, there was an error. Please try again.</p>
+                    <div className="p-2 bg-red-50 border border-red-200 rounded-lg">
+                      <p className="text-red-800 text-xs">Sorry, there was an error. Please try again.</p>
                     </div>
                   )}
 

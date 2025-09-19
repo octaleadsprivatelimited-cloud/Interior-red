@@ -15,7 +15,7 @@ const AboutPreview = () => {
   const stats = [
     { number: '60+', label: 'Projects Completed' },
     { number: '98%', label: 'Client Satisfaction' },
-    { number: '4+', label: 'Years Experience' },
+    { number: '6+', label: 'Years Experience' },
     { number: '50+', label: 'Awards Won' }
   ];
 
@@ -38,7 +38,7 @@ const AboutPreview = () => {
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               We are a team of passionate interior designers dedicated to transforming 
-              your vision into reality. With over 4 years of experience, we specialize 
+              your vision into reality. With over 6 years of experience, we specialize 
               in creating stunning, functional spaces that reflect your unique style and 
               enhance your quality of life.
             </p>

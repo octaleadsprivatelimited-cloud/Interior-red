@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, User, Clock, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Small Space Design: Maximizing Functionality - Dream Space Interiors',
+  description: 'Learn expert tips for designing small spaces to maximize functionality and style. Smart storage solutions, space-saving furniture, and design tricks for compact homes.',
+  keywords: ['small space design', 'compact home design', 'space saving furniture', 'small apartment design', 'storage solutions', 'functional design'],
+};
 
 export default function SmallSpaceDesignMaximizingFunctionality() {
   return (

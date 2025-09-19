@@ -1,18 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
-import { Star, Quote, Filter, Calendar, MapPin } from 'lucide-react';
+import { Star, Quote, Calendar, MapPin } from 'lucide-react';
 
 const Reviews = () => {
-  const [selectedFilter, setSelectedFilter] = useState('all');
-
-  const filters = [
-    { id: 'all', name: 'All Reviews', count: 127 },
-    { id: 'residential', name: 'Residential', count: 89 },
-    { id: 'commercial', name: 'Commercial', count: 38 },
-    { id: 'luxury', name: 'Luxury', count: 24 }
-  ];
 
   const reviews = [
     {
@@ -89,9 +80,6 @@ const Reviews = () => {
     }
   ];
 
-  const filteredReviews = selectedFilter === 'all' 
-    ? reviews 
-    : reviews.filter(review => review.category === selectedFilter);
 
 
   const stats = [
@@ -153,27 +141,10 @@ const Reviews = () => {
             </p>
           </div>
 
-          {/* Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {filters.map((filter) => (
-              <button
-                key={filter.id}
-                onClick={() => setSelectedFilter(filter.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  selectedFilter === filter.id
-                    ? 'bg-accent text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-600 hover:bg-accent hover:text-white shadow-md'
-                }`}
-              >
-                <Filter className="w-4 h-4 mr-2 inline" />
-                {filter.name} ({filter.count})
-              </button>
-            ))}
-          </div>
 
           {/* Reviews Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredReviews.map((review) => (
+            {reviews.map((review) => (
               <div key={review.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">

@@ -175,7 +175,7 @@ const Testimonials = () => {
             <div className="text-gray-600">Average Rating</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-accent mb-2">4+</div>
+            <div className="text-4xl font-bold text-accent mb-2">6+</div>
             <div className="text-gray-600">Years Experience</div>
           </div>
         </div>

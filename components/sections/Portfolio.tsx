@@ -1,8 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Eye, ExternalLink } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 const Portfolio = () => {
 
@@ -12,66 +11,54 @@ const Portfolio = () => {
       title: 'Modern Family Home',
       category: 'residential',
       type: 'Complete Renovation',
-      location: 'New York, NY',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      description: 'A stunning transformation of a traditional family home into a modern, functional space.',
-      link: '/portfolio/modern-family-home'
+      description: 'A stunning transformation of a traditional family home into a modern, functional space.'
     },
     {
       id: 2,
       title: 'Luxury Penthouse',
       category: 'luxury',
       type: 'Interior Design',
-      location: 'Manhattan, NY',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      description: 'Elegant penthouse design with panoramic city views and premium finishes.',
-      link: '/portfolio/luxury-penthouse'
+      description: 'Elegant penthouse design with panoramic city views and premium finishes.'
     },
     {
       id: 3,
       title: 'Tech Startup Office',
       category: 'commercial',
       type: 'Office Design',
-      location: 'San Francisco, CA',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
-      description: 'Innovative workspace design that promotes creativity and collaboration.',
-      link: '/portfolio/tech-startup-office'
+      description: 'Innovative workspace design that promotes creativity and collaboration.'
     },
     {
       id: 4,
       title: 'Contemporary Living',
       category: 'modern',
       type: 'Space Planning',
-      location: 'Los Angeles, CA',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-      description: 'Clean, minimalist design with focus on natural light and open spaces.',
-      link: '/portfolio/contemporary-living'
+      description: 'Clean, minimalist design with focus on natural light and open spaces.'
     },
     {
       id: 5,
       title: 'Boutique Hotel Lobby',
       category: 'commercial',
       type: 'Hospitality Design',
-      location: 'Miami, FL',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
-      description: 'Sophisticated hotel lobby design that creates a memorable first impression.',
-      link: '/portfolio/boutique-hotel-lobby'
+      description: 'Sophisticated hotel lobby design that creates a memorable first impression.'
     },
     {
       id: 6,
       title: 'Cozy Apartment',
       category: 'residential',
       type: 'Small Space Design',
-      location: 'Brooklyn, NY',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-      description: 'Maximizing space in a small apartment with smart storage solutions.',
-      link: '/portfolio/cozy-apartment'
+      description: 'Maximizing space in a small apartment with smart storage solutions.'
     }
   ];
 
@@ -121,12 +108,6 @@ const Portfolio = () => {
                     >
                       <Eye className="w-5 h-5 text-white" />
                     </button>
-                    <Link
-                      href={project.link}
-                      className="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent/90 transition-colors duration-200"
-                    >
-                      <ExternalLink className="w-5 h-5 text-white" />
-                    </Link>
                   </div>
                 </div>
 
@@ -151,17 +132,8 @@ const Portfolio = () => {
                 </p>
                 
                 <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                  <span>📍 {project.location}</span>
                   <span className="capitalize">{project.category}</span>
                 </div>
-                
-                <Link
-                  href={project.link}
-                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium group-hover:translate-x-1 transition-all duration-200"
-                >
-                  View Project
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
               </div>
             </div>
           ))}
@@ -175,22 +147,6 @@ const Portfolio = () => {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Let's create something extraordinary together. Our team is ready to bring your vision to life.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/portfolio"
-              className="btn-primary inline-flex items-center justify-center group"
-            >
-              View All Projects
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </Link>
-            
-            <Link
-              href="/contact"
-              className="btn-secondary inline-flex items-center justify-center"
-            >
-              Start Your Project
-            </Link>
-          </div>
         </div>
       </div>
     </section>
