@@ -294,7 +294,7 @@ const Services = () => {
                 Experience the <span className="text-accent">Elite Difference</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                With over 10 years of experience and 500+ successful projects, 
+                With over 4 years of experience and 60+ successful projects, 
                 we bring unmatched expertise and attention to detail to every project.
               </p>
               

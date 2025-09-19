@@ -13,9 +13,9 @@ const AboutPreview = () => {
   ];
 
   const stats = [
-    { number: '500+', label: 'Projects Completed' },
+    { number: '60+', label: 'Projects Completed' },
     { number: '98%', label: 'Client Satisfaction' },
-    { number: '10+', label: 'Years Experience' },
+    { number: '4+', label: 'Years Experience' },
     { number: '50+', label: 'Awards Won' }
   ];
 
@@ -33,12 +33,12 @@ const AboutPreview = () => {
             
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Creating Beautiful Spaces
-              <span className="block text-accent">Since 2013</span>
+              <span className="block text-accent">Since 2020</span>
             </h2>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               We are a team of passionate interior designers dedicated to transforming 
-              your vision into reality. With over 10 years of experience, we specialize 
+              your vision into reality. With over 4 years of experience, we specialize 
               in creating stunning, functional spaces that reflect your unique style and 
               enhance your quality of life.
             </p>

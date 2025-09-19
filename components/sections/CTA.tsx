@@ -101,7 +101,7 @@ const CTA = () => {
                     </div>
                   ))}
                 </div>
-                <span>500+ Happy Clients</span>
+                <span>60+ Happy Clients</span>
               </div>
               <div className="flex items-center">
                 <Star className="w-4 h-4 text-yellow-300 mr-1" />

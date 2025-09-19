@@ -57,7 +57,7 @@ const Hero = () => {
       id: 2,
       title: 'Modern Living',
       subtitle: 'Redefined',
-      description: 'Create contemporary spaces that blend comfort, style, and functionality. Our expert designers craft interiors that inspire and delight.',
+      description: '',
       image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=1080&fit=crop',
       cta: 'View Our Work',
       ctaLink: '/portfolio'
@@ -84,7 +84,7 @@ const Hero = () => {
   const currentSlideData = heroSlides[currentSlide];
 
   return (
-    <section className="relative min-h-[calc(80vh-48px)] lg:min-h-[calc(80vh-56px)] overflow-hidden">
+    <section className="relative h-screen lg:min-h-[calc(80vh-56px)] overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0">
         {heroSlides.map((slide, index) => (
@@ -107,9 +107,9 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center py-16 lg:py-24">
+      <div className="relative z-10 h-full flex items-end justify-center pb-16 lg:items-center lg:py-24">
         <div className="container-custom px-4 w-full">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 w-full items-start lg:items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full items-start lg:items-center">
             {/* Left Column - Hero Content */}
             <div className="max-w-2xl order-1 lg:order-1">
               
@@ -118,7 +118,7 @@ const Hero = () => {
                 <span className="block text-accent-400">{currentSlideData.subtitle}</span>
               </h1>
               
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 lg:mb-12 max-w-2xl leading-relaxed">
+              <p className="hidden lg:block text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 lg:mb-12 max-w-2xl leading-relaxed">
                 {currentSlideData.description}
               </p>
 
@@ -133,33 +133,39 @@ const Hero = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+              <div className="grid grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-8">
                 <div className="text-center">
-                  <div className="flex items-center justify-center mb-2 lg:mb-3">
-                    <Users className="w-6 h-6 lg:w-8 lg:h-8 text-accent-400 mr-2 lg:mr-3" />
-                    <span className="text-2xl lg:text-4xl font-bold text-white">500+</span>
+                  <div className="flex flex-col items-center mb-1 lg:mb-3">
+                    <div className="flex items-center justify-center mb-1 lg:mb-2">
+                      <Users className="w-4 h-4 lg:w-8 lg:h-8 text-accent-400 mr-1 lg:mr-3" />
+                      <span className="text-lg lg:text-4xl font-bold text-white">60+</span>
+                    </div>
+                    <p className="text-gray-300 text-xs lg:text-base">Happy Clients</p>
                   </div>
-                  <p className="text-gray-300 text-sm lg:text-base">Happy Clients</p>
                 </div>
                 <div className="text-center">
-                  <div className="flex items-center justify-center mb-2 lg:mb-3">
-                    <Star className="w-6 h-6 lg:w-8 lg:h-8 text-accent-400 mr-2 lg:mr-3" />
-                    <span className="text-2xl lg:text-4xl font-bold text-white">4.9</span>
+                  <div className="flex flex-col items-center mb-1 lg:mb-3">
+                    <div className="flex items-center justify-center mb-1 lg:mb-2">
+                      <Star className="w-4 h-4 lg:w-8 lg:h-8 text-accent-400 mr-1 lg:mr-3" />
+                      <span className="text-lg lg:text-4xl font-bold text-white">4.9</span>
+                    </div>
+                    <p className="text-gray-300 text-xs lg:text-base">Client Rating</p>
                   </div>
-                  <p className="text-gray-300 text-sm lg:text-base">Client Rating</p>
                 </div>
                 <div className="text-center">
-                  <div className="flex items-center justify-center mb-2 lg:mb-3">
-                    <Clock className="w-6 h-6 lg:w-8 lg:h-8 text-accent-400 mr-2 lg:mr-3" />
-                    <span className="text-2xl lg:text-4xl font-bold text-white">10+</span>
+                  <div className="flex flex-col items-center mb-1 lg:mb-3">
+                    <div className="flex items-center justify-center mb-1 lg:mb-2">
+                      <Clock className="w-4 h-4 lg:w-8 lg:h-8 text-accent-400 mr-1 lg:mr-3" />
+                      <span className="text-lg lg:text-4xl font-bold text-white">4+</span>
+                    </div>
+                    <p className="text-gray-300 text-xs lg:text-base">Years Experience</p>
                   </div>
-                  <p className="text-gray-300 text-sm lg:text-base">Years Experience</p>
                 </div>
               </div>
             </div>
 
             {/* Right Column - Contact Form */}
-            <div className="lg:max-w-sm order-2 lg:order-2 lg:justify-self-end lg:mt-8">
+            <div className="hidden lg:block lg:max-w-sm order-2 lg:order-2 lg:justify-self-end lg:mt-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
                 <h3 className="text-lg font-bold text-white mb-3">Get Free Quote</h3>
                 <form onSubmit={handleSubmit} className="space-y-3">

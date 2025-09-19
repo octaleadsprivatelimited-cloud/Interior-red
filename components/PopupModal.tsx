@@ -212,7 +212,7 @@ const PopupModal = () => {
                 </div>
                 <div className="flex items-center">
                   <Calendar className="w-4 h-4 text-accent mr-1" />
-                  <span>500+ Projects</span>
+                  <span>60+ Projects</span>
                 </div>
               </div>
             </div>

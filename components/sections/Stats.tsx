@@ -9,7 +9,7 @@ const Stats = () => {
   const stats = [
     {
       icon: Users,
-      number: 500,
+      number: 60,
       suffix: '+',
       label: 'Happy Clients',
       description: 'Satisfied customers who trust our design expertise'
@@ -23,10 +23,10 @@ const Stats = () => {
     },
     {
       icon: Clock,
-      number: 10,
+      number: 4,
       suffix: '+',
       label: 'Years Experience',
-      description: 'Decade of expertise in interior design'
+      description: 'Years of expertise in interior design'
     },
     {
       icon: Star,
