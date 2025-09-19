@@ -85,7 +85,7 @@ const Reviews = () => {
   const stats = [
     { label: 'Total Reviews', value: '127' },
     { label: 'Average Rating', value: '4.9/5' },
-    { label: '5-Star Reviews', value: '98%' },
+    { label: '5-Star Reviews', value: '100%' },
     { label: 'Would Recommend', value: '100%' }
   ];
 

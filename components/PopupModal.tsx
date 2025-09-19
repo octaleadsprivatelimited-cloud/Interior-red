@@ -42,19 +42,43 @@ const PopupModal = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch('https://formspree.io/f/xdklqadr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          mobile: formData.mobile,
+          form_type: 'Popup Modal Form'
+        }),
+      });
 
-    // Store submission in localStorage for demo
-    const submissions = JSON.parse(localStorage.getItem('popupSubmissions') || '[]');
-    submissions.push({
-      ...formData,
-      timestamp: new Date().toISOString()
-    });
-    localStorage.setItem('popupSubmissions', JSON.stringify(submissions));
-
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        // Fallback to localStorage if Formspree fails
+        const submissions = JSON.parse(localStorage.getItem('popupSubmissions') || '[]');
+        submissions.push({
+          ...formData,
+          timestamp: new Date().toISOString()
+        });
+        localStorage.setItem('popupSubmissions', JSON.stringify(submissions));
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      // Fallback to localStorage if Formspree fails
+      const submissions = JSON.parse(localStorage.getItem('popupSubmissions') || '[]');
+      submissions.push({
+        ...formData,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem('popupSubmissions', JSON.stringify(submissions));
+      setIsSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
 
     // Close popup after 3 seconds
     setTimeout(() => {

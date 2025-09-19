@@ -14,9 +14,9 @@ const AboutPreview = () => {
 
   const stats = [
     { number: '60+', label: 'Projects Completed' },
-    { number: '98%', label: 'Client Satisfaction' },
+    { number: '100%', label: 'Client Satisfaction' },
     { number: '6+', label: 'Years Experience' },
-    { number: '50+', label: 'Awards Won' }
+    { number: '10+', label: 'Awards Won' }
   ];
 
   return (

@@ -16,7 +16,7 @@ const Stats = () => {
     },
     {
       icon: Award,
-      number: 50,
+      number: 10,
       suffix: '+',
       label: 'Awards Won',
       description: 'Industry recognition for our outstanding work'
