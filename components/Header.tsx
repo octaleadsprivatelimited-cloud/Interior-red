@@ -141,45 +141,8 @@ const Header = () => {
                   >
                     Get Free Quote
                   </Link>
-                  
-                  {/* WhatsApp Button - Desktop */}
-                  <motion.a
-                    href="https://wa.me/918985456887?text=Hello!%20I'm%20interested%20in%20your%20interior%20design%20services.%20Can%20you%20help%20me?"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-transparent hover:bg-green-50 transition-all duration-200 text-white border-0"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    aria-label="Chat on WhatsApp"
-                  >
-                    <Image
-                      src="/images/whatsap.webp"
-                      alt="WhatsApp"
-                      width={40}
-                      height={40}
-                      className="w-10 h-10"
-                    />
-                  </motion.a>
                 </div>
 
-                {/* WhatsApp Button - Mobile only */}
-                <motion.a
-                  href="https://wa.me/918985456887?text=Hello!%20I'm%20interested%20in%20your%20interior%20design%20services.%20Can%20you%20help%20me?"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="lg:hidden p-2 rounded-lg bg-transparent hover:bg-green-50 transition-all duration-200 text-white border-0"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  aria-label="Chat on WhatsApp"
-                >
-                  <Image
-                    src="/images/whatsap.webp"
-                    alt="WhatsApp"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
-                  />
-                </motion.a>
 
                 {/* Mobile Menu Button */}
                 <motion.button
