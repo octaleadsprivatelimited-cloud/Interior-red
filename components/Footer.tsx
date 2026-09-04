@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, Youtube, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { Phone, Mail, MapPin, Camera, Play, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,6 +27,7 @@ const Footer = () => {
     { name: 'Portfolio', href: '/portfolio' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Interior Design in Hyderabad', href: '/interior-design-hyderabad' },
   ];
 
   const serviceLinks = [
@@ -46,8 +47,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Instagram', href: 'https://www.instagram.com/dreamspaceinteriorsdecors', icon: Instagram },
-    { name: 'YouTube', href: 'https://www.youtube.com/@DreamSpace_Interiors', icon: Youtube },
+    { name: 'Instagram', href: 'https://www.instagram.com/dreamspaceinteriorsdecors', icon: Camera },
+    { name: 'YouTube', href: 'https://www.youtube.com/@DreamSpace_Interiors', icon: Play },
   ];
 
   return (
@@ -170,5 +171,4 @@ const Footer = () => {
 };
 
 export default Footer;
-
 

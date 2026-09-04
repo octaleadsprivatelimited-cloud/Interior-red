@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Sofa, CheckCircle, Star, Home, Users, Target } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Furniture Selection Services - Dream Space Interiors',
-  description: 'Curate the perfect furniture pieces that combine style, comfort, and durability with our expert furniture selection services.',
-  keywords: ['furniture selection', 'interior furniture', 'furniture design', 'custom furniture', 'furniture consultation'],
-};
+export const metadata = pageMetadata('/furniture-selection');
 
 const FurnitureSelection = () => {
   const services = [
@@ -57,6 +54,7 @@ const FurnitureSelection = () => {
 
   return (
     <div className="min-h-screen">
+      <PageSeo path="/furniture-selection" />
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

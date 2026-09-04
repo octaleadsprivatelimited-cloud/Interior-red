@@ -1,12 +1,9 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Link from 'next/link';
 import { ArrowLeft, Shield, Eye, Lock, Database, UserCheck } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy - Dream Space Interiors',
-  description: 'Learn how Dream Space Interiors protects your privacy and handles your personal information.',
-  keywords: ['privacy policy', 'data protection', 'privacy', 'personal information'],
-};
+export const metadata = pageMetadata('/privacy-policy');
 
 const PrivacyPolicy = () => {
   const sections = [
@@ -39,6 +36,7 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <PageSeo path="/privacy-policy" />
       {/* Header */}
       <section className="bg-white shadow-sm">
         <div className="container-custom py-8">

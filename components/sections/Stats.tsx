@@ -3,6 +3,36 @@
 import { useState, useEffect } from 'react';
 import { Users, Award, Clock, Star, CheckCircle, TrendingUp } from 'lucide-react';
 
+const AnimatedNumber = ({
+  end,
+  duration = 2000,
+  isVisible,
+}: {
+  end: number;
+  duration?: number;
+  isVisible: boolean;
+}) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let startTime: number;
+    let animationFrame: number;
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      setCount(Math.floor(progress * end));
+      if (progress < 1) animationFrame = requestAnimationFrame(animate);
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrame);
+  }, [isVisible, end, duration]);
+
+  return <span>{count}</span>;
+};
+
 const Stats = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -73,30 +103,6 @@ const Stats = () => {
     };
   }, []);
 
-  const AnimatedNumber = ({ end, duration = 2000 }: { end: number; duration?: number }) => {
-    const [count, setCount] = useState(0);
-
-    useEffect(() => {
-      if (!isVisible) return;
-
-      let startTime: number;
-      const animate = (currentTime: number) => {
-        if (!startTime) startTime = currentTime;
-        const progress = Math.min((currentTime - startTime) / duration, 1);
-        
-        setCount(Math.floor(progress * end));
-        
-        if (progress < 1) {
-          requestAnimationFrame(animate);
-        }
-      };
-
-      requestAnimationFrame(animate);
-    }, [isVisible, end, duration]);
-
-    return <span>{count}</span>;
-  };
-
   return (
     <section id="stats-section" className="section-padding bg-gradient-to-br from-primary-600 to-primary-700 text-white">
       <div className="container-custom">
@@ -132,9 +138,9 @@ const Stats = () => {
                   <div className="mb-4">
                     <span className="text-4xl lg:text-5xl font-bold block">
                       {stat.number === 4.9 ? (
-                        <AnimatedNumber end={4.9} />
+                        <AnimatedNumber end={4.9} isVisible={isVisible} />
                       ) : (
-                        <AnimatedNumber end={stat.number} />
+                    <AnimatedNumber end={stat.number} isVisible={isVisible} />
                       )}
                       <span className="text-2xl lg:text-3xl">{stat.suffix}</span>
                     </span>

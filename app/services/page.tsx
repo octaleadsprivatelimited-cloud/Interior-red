@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Home, Building, Palette, Ruler, Sofa, Wrench, Lightbulb, CheckCircle, Star } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Interior Design Services in Hyderabad | Dream Space Interiors',
-  description: 'Comprehensive interior design services in Hyderabad, Telangana. Residential design, commercial design, space planning, color consultation, and more by expert designers.',
-  keywords: ['interior design services', 'residential design', 'commercial design', 'space planning', 'color consultation', 'interior design services Hyderabad', 'residential design Hyderabad', 'commercial design Telangana', 'interior design company Hyderabad'],
-};
+export const metadata = pageMetadata('/services');
 
 const Services = () => {
   const services = [
@@ -137,6 +134,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
+      <PageSeo path="/services" />
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

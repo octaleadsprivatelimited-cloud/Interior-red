@@ -80,9 +80,11 @@ const Header = () => {
               {/* Logo */}
               <div className="flex items-center flex-shrink-0">
                 <Link href="/" className="flex items-center">
-                  <img
+                  <Image
                     src="/images/logo.png"
                     alt="Dream Space Interiors"
+                    width={100}
+                    height={100}
                     className="h-[65px] sm:h-[86px] lg:h-[97px] w-auto"
                   />
                 </Link>

@@ -1,17 +1,15 @@
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, Calendar, User, Clock, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
-import { Metadata } from 'next';
+import { ArrowLeft, Calendar, User, Clock, Tag, Share2, MessageCircle, Link2, ExternalLink } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Small Space Design: Maximizing Functionality - Dream Space Interiors',
-  description: 'Learn expert tips for designing small spaces to maximize functionality and style. Smart storage solutions, space-saving furniture, and design tricks for compact homes.',
-  keywords: ['small space design', 'compact home design', 'space saving furniture', 'small apartment design', 'storage solutions', 'functional design'],
-};
+export const metadata = pageMetadata('/blog/small-space-design-maximizing-functionality');
 
 export default function SmallSpaceDesignMaximizingFunctionality() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <PageSeo path="/blog/small-space-design-maximizing-functionality" />
       {/* Hero Section */}
       <section className="relative h-96 bg-gradient-to-r from-accent to-brown-600">
         <div className="absolute inset-0 bg-black/40"></div>
@@ -65,19 +63,19 @@ export default function SmallSpaceDesignMaximizingFunctionality() {
                   className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
                   aria-label="Share on Facebook"
                 >
-                  <Facebook className="w-5 h-5 text-gray-600" />
+                  <MessageCircle className="w-5 h-5 text-gray-600" />
                 </button>
                 <button 
                   className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
                   aria-label="Share on Twitter"
                 >
-                  <Twitter className="w-5 h-5 text-gray-600" />
+                  <Link2 className="w-5 h-5 text-gray-600" />
                 </button>
                 <button 
                   className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
                   aria-label="Share on LinkedIn"
                 >
-                  <Linkedin className="w-5 h-5 text-gray-600" />
+                  <ExternalLink className="w-5 h-5 text-gray-600" />
                 </button>
               </div>
             </div>

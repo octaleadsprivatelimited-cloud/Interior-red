@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Eye } from 'lucide-react';
 
 const Portfolio = () => {
@@ -102,12 +103,12 @@ const Portfolio = () => {
                 {/* Overlay Content */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex space-x-4">
-                    <button 
+                    <Link href={`/portfolio#project-${project.id}`}
                       className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
-                      aria-label="View project details"
+                      aria-label={`View ${project.title} in our portfolio`}
                     >
                       <Eye className="w-5 h-5 text-white" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 

@@ -1,28 +1,10 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, MapPin, Phone, Mail, Star, CheckCircle, Home, Building, Users, Award } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Interior Designers in Hyderabad | Dream Space Interiors | Telangana',
-  description: 'Top interior designers in Hyderabad, Telangana. Professional residential and commercial interior design services. Award-winning designs for homes and offices in Hyderabad.',
-  keywords: [
-    'interior designers Hyderabad',
-    'interior design Hyderabad',
-    'home interior design Hyderabad',
-    'residential interior design Hyderabad',
-    'commercial interior design Hyderabad',
-    'interior design company Hyderabad',
-    'best interior designers Hyderabad',
-    'interior design services Hyderabad',
-    'Hyderabad interior designers',
-    'Telangana interior design',
-    'interior design Banjara Hills',
-    'interior design Jubilee Hills',
-    'interior design Gachibowli',
-    'interior design HITEC City'
-  ],
-};
+export const metadata = pageMetadata('/interior-design-hyderabad');
 
 const InteriorDesignHyderabad = () => {
   const services = [
@@ -68,6 +50,7 @@ const InteriorDesignHyderabad = () => {
 
   return (
     <div className="min-h-screen">
+      <PageSeo path="/interior-design-hyderabad" />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-accent-900 text-white py-20 lg:py-32">
         <div className="absolute inset-0 bg-black/20"></div>

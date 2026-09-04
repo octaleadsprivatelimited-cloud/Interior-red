@@ -1,12 +1,9 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Link from 'next/link';
 import { ArrowLeft, FileText, Scale, Shield, AlertTriangle } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Terms of Service - Dream Space Interiors',
-  description: 'Read our terms of service and understand the conditions for using Dream Space Interiors services.',
-  keywords: ['terms of service', 'terms and conditions', 'legal terms', 'service agreement'],
-};
+export const metadata = pageMetadata('/terms-of-service');
 
 const TermsOfService = () => {
   const sections = [
@@ -34,6 +31,7 @@ const TermsOfService = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <PageSeo path="/terms-of-service" />
       {/* Header */}
       <section className="bg-white shadow-sm">
         <div className="container-custom py-8">

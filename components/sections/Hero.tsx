@@ -95,7 +95,7 @@ const Hero = () => {
     }, 5000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [heroSlides.length]);
 
   const currentSlideData = heroSlides[currentSlide];
 
@@ -112,7 +112,8 @@ const Hero = () => {
           >
             <Image
               src={slide.image}
-              alt={slide.title}
+              alt=""
+              sizes="100vw"
               fill
               className="object-cover"
               priority={index === 0}
@@ -134,7 +135,7 @@ const Hero = () => {
             delay: 0.5 
           }}
         >
-          <motion.h2 
+          <motion.p
             className="text-3xl sm:text-4xl font-bold text-white mb-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -146,7 +147,7 @@ const Hero = () => {
             }}
           >
             Your dream our design
-          </motion.h2>
+          </motion.p>
         </motion.div>
       </div>
 
@@ -158,12 +159,12 @@ const Hero = () => {
             <div className="max-w-2xl order-1 lg:order-1">
               
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 lg:mb-8 leading-tight">
-                <span className="block">{currentSlideData.title}</span>
-                <span className="block text-accent-400">{currentSlideData.subtitle}</span>
+                <span className="block">Interior Designers</span>
+                <span className="block text-accent-400">in Hyderabad</span>
               </h1>
               
-              <p className="hidden lg:block text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 lg:mb-12 max-w-2xl leading-relaxed">
-                {currentSlideData.description}
+              <p className="text-base sm:text-xl lg:text-2xl text-gray-200 mb-8 lg:mb-12 max-w-2xl leading-relaxed">
+                Home and commercial interiors planned around your space, style and everyday needs. Based in Bachupally, serving Hyderabad.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mb-12 lg:mb-16">

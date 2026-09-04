@@ -145,7 +145,7 @@ const PricingSlider = () => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [sliderImages.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % sliderImages.length);

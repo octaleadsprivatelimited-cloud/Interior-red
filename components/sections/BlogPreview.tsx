@@ -31,7 +31,7 @@ const BlogPreview = () => {
       title: 'Small Space Design: Maximizing Functionality',
       excerpt: 'Expert tips and tricks for making the most of small spaces, from clever storage solutions to optical illusions that create more room.',
       image: 'https://placehold.co/800x500?text=Small+Space+Design',
-      author: 'Emily Rodriguez',
+      author: 'Emma Rodriguez',
       date: '2024-01-05',
       readTime: '6 min read',
       category: 'Space Planning',

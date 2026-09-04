@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Wrench, CheckCircle, Star, Home, Users, Target } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Renovation Services - Dream Space Interiors',
-  description: 'Complete renovation solutions from concept to completion with minimal disruption. Professional renovation services for homes and businesses.',
-  keywords: ['renovation services', 'home renovation', 'interior renovation', 'renovation design', 'project management'],
-};
+export const metadata = pageMetadata('/renovation-services');
 
 const RenovationServices = () => {
   const services = [
@@ -57,6 +54,7 @@ const RenovationServices = () => {
 
   return (
     <div className="min-h-screen">
+      <PageSeo path="/renovation-services" />
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

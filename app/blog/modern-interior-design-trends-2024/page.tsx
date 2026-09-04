@@ -1,17 +1,15 @@
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, Calendar, User, Clock, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
-import { Metadata } from 'next';
+import { ArrowLeft, Calendar, User, Clock, Tag, Share2, MessageCircle, Link2, ExternalLink } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Modern Interior Design Trends 2024 - Dream Space Interiors',
-  description: 'Discover the latest modern interior design trends for 2024. From sustainable materials to smart home integration, explore what\'s trending in interior design.',
-  keywords: ['modern interior design trends 2024', 'contemporary design', 'sustainable interior design', 'smart home design', 'minimalist design', 'design trends'],
-};
+export const metadata = pageMetadata('/blog/modern-interior-design-trends-2024');
 
 export default function ModernInteriorDesignTrends2024() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <PageSeo path="/blog/modern-interior-design-trends-2024" />
       {/* Hero Section */}
       <section className="relative h-96 bg-gradient-to-r from-accent to-brown-600">
         <div className="absolute inset-0 bg-black/40"></div>
@@ -65,19 +63,19 @@ export default function ModernInteriorDesignTrends2024() {
                   className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
                   aria-label="Share on Facebook"
                 >
-                  <Facebook className="w-5 h-5 text-gray-600" />
+                  <MessageCircle className="w-5 h-5 text-gray-600" />
                 </button>
                 <button 
                   className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
                   aria-label="Share on Twitter"
                 >
-                  <Twitter className="w-5 h-5 text-gray-600" />
+                  <Link2 className="w-5 h-5 text-gray-600" />
                 </button>
                 <button 
                   className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
                   aria-label="Share on LinkedIn"
                 >
-                  <Linkedin className="w-5 h-5 text-gray-600" />
+                  <ExternalLink className="w-5 h-5 text-gray-600" />
                 </button>
               </div>
             </div>

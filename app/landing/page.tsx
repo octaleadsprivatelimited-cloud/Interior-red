@@ -1,7 +1,9 @@
-'use client';
+import PageContent from './PageContent';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 
-import LandingPage from '@/components/LandingPage';
+export const metadata = pageMetadata('/landing');
 
-export default function Landing() {
-  return <LandingPage />;
+export default function Page() {
+  return <><PageSeo path="/landing" /><PageContent /></>;
 }

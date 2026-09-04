@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Palette, CheckCircle, Star, Eye, Lightbulb, Target } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Color Consultation Services - Dream Space Interiors',
-  description: 'Expert color guidance to create the perfect mood and atmosphere for your space with our professional color consultation services.',
-  keywords: ['color consultation', 'color theory', 'interior color design', 'paint colors', 'color psychology'],
-};
+export const metadata = pageMetadata('/color-consultation');
 
 const ColorConsultation = () => {
   const services = [
@@ -57,6 +54,7 @@ const ColorConsultation = () => {
 
   return (
     <div className="min-h-screen">
+      <PageSeo path="/color-consultation" />
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

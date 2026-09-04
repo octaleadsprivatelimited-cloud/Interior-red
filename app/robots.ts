@@ -1,16 +1,10 @@
-import { MetadataRoute } from 'next';
-
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+import type { MetadataRoute } from 'next';
+import { absoluteUrl, isPreview } from '@/lib/seo';
 
 export default function robots(): MetadataRoute.Robots {
+  // Let crawlers read noindex directives on previews and campaign pages.
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/private/', '/admin/', '/api/'],
-    },
-    sitemap: `${siteUrl}/sitemap.xml`,
+    rules: { userAgent: '*', allow: '/', disallow: ['/api/', '/admin/', '/private/'] },
+    ...(isPreview ? {} : { sitemap: absoluteUrl('/sitemap.xml') }),
   };
 }

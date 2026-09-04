@@ -1,0 +1,107 @@
+{
+  "/about": {
+    "title": "About Our Interior Design Studio",
+    "description": "Meet Dream Space Interiors, an interior design studio in Bachupally, Hyderabad. Learn about our approach to practical, personalised home and office interiors."
+  },
+  "/blog/modern-interior-design-trends-2024": {
+    "title": "Modern Interior Design Trends 2024",
+    "description": "A look at ten interior design trends from 2024, including natural materials, biophilic design, flexible spaces and smart-home features.",
+    "headline": "10 Modern Interior Design Trends for 2024",
+    "author": "Sarah Johnson",
+    "datePublished": "2024-01-15",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=600&fit=crop"
+  },
+  "/blog": {
+    "title": "Interior Design Ideas & Advice",
+    "description": "Explore articles on home colour palettes, small-space planning, sustainable interiors and design trends from the Dream Space Interiors blog."
+  },
+  "/blog/perfect-color-palette-home": {
+    "title": "Perfect Color Palette for Your Home",
+    "description": "Learn how to choose the perfect color palette for your home. Expert tips on color theory, room-by-room color schemes, and creating harmonious interiors.",
+    "headline": "How to Choose the Perfect Color Palette for Your Home",
+    "author": "Michael Chen",
+    "datePublished": "2024-01-10",
+    "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=600&fit=crop"
+  },
+  "/blog/small-space-design-maximizing-functionality": {
+    "title": "Small Space Design: Maximizing Functionality",
+    "description": "Learn expert tips for designing small spaces to maximize functionality and style. Smart storage solutions, space-saving furniture, and design tricks for compact homes.",
+    "headline": "Small Space Design: Maximizing Functionality",
+    "author": "Emma Rodriguez",
+    "datePublished": "2024-01-05",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop"
+  },
+  "/blog/sustainable-interior-design-practices": {
+    "title": "Sustainable Interior Design Practices",
+    "description": "Discover sustainable interior design practices for eco-friendly homes. Learn about green materials, energy-efficient design, and environmentally conscious decorating.",
+    "headline": "Sustainable Interior Design Practices",
+    "author": "David Green",
+    "datePublished": "2023-12-28",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=600&fit=crop"
+  },
+  "/color-consultation": {
+    "title": "Colour Consultation for Home Interiors",
+    "description": "Choose coordinated colours for your Hyderabad home or office. Explore room colour schemes, paint samples and lighting considerations with our design team."
+  },
+  "/commercial-design": {
+    "title": "Commercial Interior Design in Hyderabad",
+    "description": "Create functional offices, retail spaces and hospitality interiors in Hyderabad. Explore commercial layouts, lighting, furniture and brand-focused design."
+  },
+  "/contact": {
+    "title": "Contact Our Hyderabad Design Studio",
+    "description": "Contact Dream Space Interiors in Bachupally, Hyderabad to discuss your home or office interiors. Call +91 8985456887 or request a free consultation."
+  },
+  "/furniture-selection": {
+    "title": "Furniture Selection & Interior Styling",
+    "description": "Find furniture that suits your room layout, style and everyday needs. Explore furniture selection, custom pieces and placement with Dream Space Interiors."
+  },
+  "/gallery": {
+    "title": "Interior Design Gallery",
+    "description": "Browse the Dream Space Interiors gallery for home and office design inspiration, including living rooms, bedrooms, kitchens and commercial spaces."
+  },
+  "/interior-design-hyderabad": {
+    "title": "Interior Design Across Hyderabad",
+    "description": "Explore home and office interior design services across Hyderabad, including Bachupally, Gachibowli and Jubilee Hills. Discuss your space with our design team."
+  },
+  "/landing": {
+    "title": "Book a Free Interior Design Consultation",
+    "description": "Discuss your home interior ideas with Dream Space Interiors in Hyderabad. Request a free consultation to explore layouts, materials and your project requirements.",
+    "noindex": true
+  },
+  "/": {
+    "title": "Interior Designers in Hyderabad",
+    "description": "Dream Space Interiors designs homes and commercial spaces in Hyderabad. Explore our services, design process and portfolio, and book a free consultation."
+  },
+  "/portfolio": {
+    "title": "Interior Design Portfolio",
+    "description": "Explore our residential and commercial interior design portfolio for ideas on room layouts, materials, lighting and finishes. Discuss your project with our team."
+  },
+  "/privacy-policy": {
+    "title": "Privacy Policy",
+    "description": "Read how Dream Space Interiors collects, uses and protects information provided through this website, including enquiries and contact forms."
+  },
+  "/renovation-services": {
+    "title": "Home & Office Renovation in Hyderabad",
+    "description": "Plan your home or office renovation in Hyderabad with Dream Space Interiors. Explore design, material selection and project coordination for your space."
+  },
+  "/residential-design": {
+    "title": "Home Interior Design in Hyderabad",
+    "description": "Plan your living room, kitchen, bedroom and bathroom interiors with Dream Space Interiors in Hyderabad. Explore custom layouts, furniture and lighting ideas."
+  },
+  "/reviews": {
+    "title": "Client Reviews",
+    "description": "Read client experiences with Dream Space Interiors and learn about our approach to home renovations, residential interiors and commercial design."
+  },
+  "/services": {
+    "title": "Interior Design Services in Hyderabad",
+    "description": "Explore residential and commercial interior design, space planning, colour consultation, furniture selection and renovation services in Hyderabad."
+  },
+  "/space-planning": {
+    "title": "Space Planning Services in Hyderabad",
+    "description": "Make better use of your home or workspace with room layouts, furniture placement, storage planning and traffic-flow design from Dream Space Interiors."
+  },
+  "/terms-of-service": {
+    "title": "Terms of Service",
+    "description": "Read the terms governing use of the Dream Space Interiors website and information about our interior design services, responsibilities and contact details."
+  }
+}

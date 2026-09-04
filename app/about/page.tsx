@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
+import PageSeo from '@/components/PageSeo';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Award, Users, Target, CheckCircle, Star, Quote } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'About Us - Dream Space Interiors | Interior Designers in Hyderabad',
-  description: 'Learn about Dream Space Interiors, Hyderabad\'s premier interior design company. Our mission, values, and expert team behind award-winning interior design services in Telangana.',
-  keywords: ['about us', 'interior design team', 'design company', 'our story', 'mission', 'values', 'interior designers Hyderabad', 'interior design company Hyderabad', 'best interior designers Telangana'],
-};
+export const metadata = pageMetadata('/about');
 
 const About = () => {
 
@@ -43,6 +40,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <PageSeo path="/about" />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
