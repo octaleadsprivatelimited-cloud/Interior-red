@@ -125,30 +125,16 @@ const Hero = () => {
 
       {/* Top Caption - Mobile Only */}
       <div className="absolute top-20 left-0 right-0 z-20 flex items-start justify-center lg:hidden">
-        <motion.div 
+        <div
           className="text-center"
-          initial={{ opacity: 0, y: 50, scale: 0.8 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ 
-            duration: 1.5, 
-            ease: "easeOut",
-            delay: 0.5 
-          }}
         >
-          <motion.p
-            className="text-3xl sm:text-4xl font-bold text-white mb-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ 
-              duration: 2,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: "easeInOut"
-            }}
+          <p
+            className="text-[28px] font-normal tracking-normal text-white/90 mb-2"
+            style={{ fontFamily: '"Times New Roman", Times, serif' }}
           >
             Your dream our design
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
       </div>
 
       {/* Content */}
