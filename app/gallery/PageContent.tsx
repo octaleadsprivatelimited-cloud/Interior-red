@@ -97,6 +97,126 @@ const Gallery = () => {
       image: '/images/Gallery-9.jpg',
       description: 'Flexible co-working space designed for productivity and collaboration.',
       tags: ['Co-working', 'Productive', 'Collaborative']
+    },
+    {
+      id: 10,
+      category: 'residential',
+      type: 'Illuminated Feature Wall',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-01-feature-wall.jpg',
+      description: 'Warm backlit feature wall with sculpted botanical detailing.',
+      tags: ['Feature Wall', 'Lighting', 'Residential']
+    },
+    {
+      id: 11,
+      category: 'residential',
+      type: 'Classic Kitchen',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-02-kitchen.jpg',
+      description: 'Cream kitchen cabinetry with brass hardware and integrated lighting.',
+      tags: ['Kitchen', 'Cabinetry', 'Residential']
+    },
+    {
+      id: 12,
+      category: 'residential',
+      type: 'Lounge Corner',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-03-lounge.jpg',
+      description: 'Relaxed lounge corner with a textured wall and accent lighting.',
+      tags: ['Living Room', 'Lighting', 'Residential']
+    },
+    {
+      id: 13,
+      category: 'residential',
+      type: 'Open Kitchen',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-04-open-kitchen.jpg',
+      description: 'Open-plan kitchen with glass-front cabinetry and pendant lighting.',
+      tags: ['Kitchen', 'Open Plan', 'Residential']
+    },
+    {
+      id: 14,
+      category: 'residential',
+      type: 'Dining and Display Area',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-05-dining.jpg',
+      description: 'Dining space with a custom display wall and warm timber finishes.',
+      tags: ['Dining Room', 'Display Unit', 'Residential']
+    },
+    {
+      id: 15,
+      category: 'residential',
+      type: 'Decorative Arched Door',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-06-arched-door.jpg',
+      description: 'Custom arched double door with patterned panels and fluted glass.',
+      tags: ['Entrance', 'Custom Door', 'Residential']
+    },
+    {
+      id: 16,
+      category: 'residential',
+      type: 'Botanical Feature Panel',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-07-feature-panel.jpg',
+      description: 'Backlit botanical panel framed by an arched linear pattern.',
+      tags: ['Feature Wall', 'Lighting', 'Residential']
+    },
+    {
+      id: 17,
+      category: 'residential',
+      type: 'Contemporary Bedroom',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-08-bedroom.jpg',
+      description: 'Contemporary bedroom with a cushioned bed, full-height storage and linear ceiling lights.',
+      tags: ['Bedroom', 'Wardrobe', 'Residential']
+    },
+    {
+      id: 18,
+      category: 'residential',
+      type: 'Full-Height Wardrobe',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-09-wardrobe.jpg',
+      description: 'Full-height wardrobe with contrasting timber details and black hardware.',
+      tags: ['Wardrobe', 'Storage', 'Residential']
+    },
+    {
+      id: 19,
+      category: 'residential',
+      type: 'Vanity Niche',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-10-washroom.jpg',
+      description: 'Compact vanity niche with a decorative mirror, fluted wall panels and pendant light.',
+      tags: ['Vanity', 'Feature Wall', 'Residential']
+    },
+    {
+      id: 20,
+      category: 'residential',
+      type: 'Prayer Space',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-11-prayer-space.jpg',
+      description: 'Custom prayer space with illuminated artwork, flowers and brass framing.',
+      tags: ['Prayer Space', 'Custom Joinery', 'Residential']
+    },
+    {
+      id: 21,
+      category: 'residential',
+      type: 'Decorative Wardrobe',
+      location: 'Hyderabad, Telangana',
+      year: '2026',
+      image: '/images/project-gallery-12-decorative-wardrobe.jpg',
+      description: 'Custom wardrobe with painted decorative panels and integrated display shelving.',
+      tags: ['Wardrobe', 'Custom Joinery', 'Residential']
     }
   ];
 
@@ -162,14 +282,14 @@ const Gallery = () => {
 
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
             {filteredImages.map((image, index) => (
               <div
                 key={image.id}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover cursor-pointer"
                 onClick={() => openLightbox(index)}
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-40 sm:h-64 overflow-hidden">
                   <Image
                     src={image.image}
                     alt={`${image.type} interior design`}
