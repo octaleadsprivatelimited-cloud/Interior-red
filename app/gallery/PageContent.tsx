@@ -220,7 +220,10 @@ const Gallery = () => {
     }
   ];
 
-  const filteredImages = galleryImages;
+  // Show the newest project photography before the existing gallery collection.
+  const filteredImages = [...galleryImages].sort(
+    (first, second) => Number(second.year) - Number(first.year)
+  );
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -270,17 +273,6 @@ const Gallery = () => {
       {/* Filter Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Latest Work
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Browse through our carefully curated collection of interior design projects 
-              that showcase our expertise and creativity.
-            </p>
-          </div>
-
-
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
             {filteredImages.map((image, index) => (
@@ -294,6 +286,8 @@ const Gallery = () => {
                     src={image.image}
                     alt={`${image.type} interior design`}
                     fill
+                    sizes="(max-width: 1023px) 50vw, (max-width: 1279px) 33vw, 25vw"
+                    quality={90}
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
