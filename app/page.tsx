@@ -1,6 +1,7 @@
 import { pageMetadata } from '@/lib/seo';
 import PageSeo from '@/components/PageSeo';
 import Hero from '@/components/sections/Hero';
+import RecentGallerySlider from '@/components/sections/RecentGallerySlider';
 import AboutPreview from '@/components/sections/AboutPreview';
 import Services from '@/components/sections/Services';
 import Portfolio from '@/components/sections/Portfolio';
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <PageSeo path="/" />
       <Hero />
+      <RecentGallerySlider />
       <AboutPreview />
       <Services />
       <Portfolio />
