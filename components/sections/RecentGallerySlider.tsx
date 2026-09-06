@@ -76,26 +76,26 @@ export default function RecentGallerySlider() {
 
       {selectedImage && selectedIndex !== null && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-2 backdrop-blur-sm sm:p-6"
           role="dialog"
           aria-modal="true"
           aria-label={`${selectedImage.alt}, image ${selectedIndex + 1} of ${allGalleryImages.length}`}
           onClick={() => setSelectedIndex(null)}
         >
-          <div className="relative h-full w-full max-w-6xl" onClick={(event) => event.stopPropagation()}>
-            <button type="button" onClick={() => setSelectedIndex(null)} className="absolute right-0 top-0 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/35" aria-label="Close image viewer">
+          <div className="relative h-[min(70vh,calc(100vw*1.25))] w-full max-w-6xl sm:h-[min(84vh,56rem)]" onClick={(event) => event.stopPropagation()}>
+            <button type="button" onClick={() => setSelectedIndex(null)} className="absolute right-1 top-1 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/40 text-white transition-colors hover:bg-black/60 sm:right-3 sm:top-3 sm:h-11 sm:w-11" aria-label="Close image viewer">
               <X className="h-6 w-6" />
             </button>
-            <button type="button" onClick={() => moveImage(-1)} className="absolute left-0 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/35 sm:left-4" aria-label="Previous image">
-              <ChevronLeft className="h-7 w-7" />
+            <button type="button" onClick={() => moveImage(-1)} className="absolute left-1 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/40 text-white transition-all hover:scale-110 hover:bg-black/60 sm:left-3 sm:h-12 sm:w-12" aria-label="Previous image">
+              <ChevronLeft className="h-6 w-6 sm:h-7 sm:w-7" />
             </button>
-            <div className="relative h-full w-full px-12 py-14 sm:px-20">
-              <Image src={selectedImage.src} alt={selectedImage.alt} fill sizes="100vw" quality={90} className="object-contain" priority />
+            <div className="relative h-full w-full px-10 py-12 sm:px-20 sm:py-14">
+              <Image key={selectedImage.src} src={selectedImage.src} alt={selectedImage.alt} fill sizes="100vw" quality={90} className="gallery-lightbox-image object-contain" priority />
             </div>
-            <button type="button" onClick={() => moveImage(1)} className="absolute right-0 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/35 sm:right-4" aria-label="Next image">
-              <ChevronRight className="h-7 w-7" />
+            <button type="button" onClick={() => moveImage(1)} className="absolute right-1 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/40 text-white transition-all hover:scale-110 hover:bg-black/60 sm:right-3 sm:h-12 sm:w-12" aria-label="Next image">
+              <ChevronRight className="h-6 w-6 sm:h-7 sm:w-7" />
             </button>
-            <p className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-3 py-1 text-sm text-white">
+            <p className="absolute bottom-2 left-1/2 -translate-x-1/2 rounded-full bg-black/60 px-3 py-1 text-xs text-white sm:bottom-4 sm:text-sm" aria-live="polite">
               {selectedIndex + 1} / {allGalleryImages.length}
             </p>
           </div>

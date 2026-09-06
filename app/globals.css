@@ -135,8 +135,24 @@
   to { transform: translateX(-50%); }
 }
 
+.gallery-lightbox-image {
+  animation: gallery-lightbox-enter 280ms ease-out;
+}
+
+@keyframes gallery-lightbox-enter {
+  from {
+    opacity: 0;
+    transform: translateX(1rem) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .recent-gallery-track {
+  .recent-gallery-track,
+  .gallery-lightbox-image {
     animation: none;
   }
 }
